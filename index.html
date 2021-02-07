@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="topTab.css">
+<link rel="stylesheet" href="funTechieViews.css">
+<link rel="stylesheet" href="imageflyers.css">
+<link rel="stylesheet" href="pageVerticalSpliter.css">
+<title>SUNIL SIMON</title>
+<body style="background-color:#000000">
+<style>
+html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+/*moved to css*/
+</style>
+</head>
+<body>
+
+<div class="box">
+      <div class="row header">
+	<p></p>
+
+<div class="tab">
+  <button style="float: right" class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
+<button style="float: right" class="tablinks" onclick="openTab(event, 'about')" id="defaultOpen">About</button>
+</div>
+
+
+</div>
+      <div class="row content1 content2sub">
+
+<div id="about" class="tabcontent">
+  <span onclick="this.parentElement.style.display='block'" class="btn-group" style="width:100%">
+
+ <button1 id="fun" onmousemove="moveFunFunction()" style="width:33.333%"
+ onmouseleave="awayFunFunction()" class="leftSideButton"><span><br><b><u>FUN ME</u></b><br><br>- Mountain Biker<br><br>- Guitarist<br><br>- Scuba</span></button1>
+
+
+<div class="imagecontainer2" style="width:33.333%">
+
+<div id="floatingbtn1" class="floatingImageButton floatingImageButton1sub">
+</div>
+
+<div id="floatingbtn2" class="floatingImageButton floatingImageButton2sub">
+</div>
+
+<div id="floatingbtn3" class="floatingImageButton floatingImageButton3sub">
+</div>
+
+<div id="floatingbtn4" class="floatingImageButton floatingImageButton4sub">
+</div>
+
+<div id="floatingbtn5" class="floatingImageButton floatingImageButton5sub">
+</div>
+
+<button id = "image" type="button" class= "imageButton">
+</button>
+
+<div id="floatingbtn6" class="floatingImageButton2 floatingImageButton6">
+</div>
+
+</div>
+
+ <button3 id="techi" onmousemove="moveTechiFunction()" onmouseleave="awayTechiFunction()" style="width:33.333%" class="rightSideButton"><span><br><b><u>TECHIE ME</u></b><br><br>- iOS Developer<br><br>- Web Developer<br><br>- Robotics<br><br>- IOT</span></button3> 
+
+  </span>
+</div>
+
+
+
+<div id="contact" class="tabcontent"> 
+  <span onclick="this.parentElement.style.display='block'" </span>
+</div>
+
+</div>
+
+<div class="row content2 content3sub">
+        <p>content</p><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+      <div class="row footer">
+        <p>footer</p>
+      </div>
+    </div>
+
+
+
+<div id="contact" class="tabcontent"> 
+  <span onclick="this.parentElement.style.display='block'" </span>
+</div>
+
+
+<script>
+var timer_cal1;
+var isON = 0;
+var myVar1;
+var myVar2;
+var myVar3;
+var myVar4;
+function moveFunFunction() {
+
+  document.getElementById("image"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn6"). style.borderRadius = "0px";
+
+  document.getElementById("floatingbtn1"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn2"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn3"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn4"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn5"). style.borderRadius = "0px";
+
+  document.getElementById("techi").style.opacity = 0;
+  document.getElementById("floatingbtn1").style.opacity = 1;
+  document.getElementById("floatingbtn2").style.opacity = 1;
+  document.getElementById("floatingbtn3").style.opacity = 1;
+  document.getElementById("floatingbtn4").style.opacity = 1;
+  document.getElementById("floatingbtn5").style.opacity = 1;
+  document.getElementById("floatingbtn6").style.opacity = 1;
+
+  document.getElementById("floatingbtn1").style.transform = "translate(45%, -50%)";
+  document.getElementById("floatingbtn2").style.transform = "translate(-45%, 60%)";
+  document.getElementById("floatingbtn3").style.transform = "translate(60%, 45.5%)";
+  document.getElementById("floatingbtn4").style.transform = "translate(-50%, -145.5%)";
+  document.getElementById("floatingbtn5").style.transform = "translate(45%, -160%)";
+
+  document.getElementById("floatingbtn2").style.borderBottomLeftRadius= "50px 50px";
+  document.getElementById("floatingbtn2").style.borderTopLeftRadius= "50px 50px";
+  document.getElementById("floatingbtn3").style.borderBottomRightRadius= "50px 50px";
+  document.getElementById("floatingbtn1").style.borderTopRightRadius= "50px 50px";
+  document.getElementById("floatingbtn4").style.borderTopLeftRadius= "50px 50px";
+  document.getElementById("floatingbtn5").style.borderBottomRightRadius= "50px 50px";
+  document.getElementById("floatingbtn5").style.borderTopRightRadius= "50px 50px";
+
+  document.getElementById("floatingbtn6"). style.borderBottomLeftRadius = "50px 50px";
+  document.getElementById("image"). style.borderBottomLeftRadius = "50px 50px";
+
+
+
+  document.getElementById("floatingbtn4").style.height = "220px";
+  document.getElementById("floatingbtn5").style.width = "220px";
+  document.getElementById("floatingbtn1").style.width = "220px";
+  document.getElementById("floatingbtn2").style.width = "220px";
+  document.getElementById("floatingbtn3").style.height = "220px";
+  
+}
+
+function moveTechiFunction() {
+
+  document.getElementById("image"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn6"). style.borderRadius = "0px";
+
+  document.getElementById("floatingbtn1"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn2"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn3"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn4"). style.borderRadius = "0px";
+  document.getElementById("floatingbtn5"). style.borderRadius = "0px";
+
+  document.getElementById("fun").style.opacity = 0;
+  document.getElementById("floatingbtn1").style.opacity = 1;
+  document.getElementById("floatingbtn2").style.opacity = 1;
+  document.getElementById("floatingbtn4").style.opacity = 1;
+  document.getElementById("floatingbtn5").style.opacity = 1;
+  document.getElementById("floatingbtn3").style.opacity = 1;
+  document.getElementById("floatingbtn6").style.opacity = 1;
+
+  document.getElementById("floatingbtn1").style.transform = "translate(-145%, -50%)";
+  document.getElementById("floatingbtn2").style.transform = "translate(-145%, 60%)";
+  document.getElementById("floatingbtn3").style.transform = "translate(-50%, 45.5%)";
+  document.getElementById("floatingbtn4").style.transform = "translate(-160%, -145.5%)";
+  document.getElementById("floatingbtn5").style.transform = "translate(-55%, -160%)";
+
+  document.getElementById("floatingbtn3").style.borderBottomRightRadius= "50px 50px";
+  document.getElementById("floatingbtn2").style.borderBottomLeftRadius= "50px 50px";
+  document.getElementById("floatingbtn2").style.borderTopLeftRadius= "50px 50px";
+  document.getElementById("floatingbtn1").style.borderBottomLeftRadius= "50px 50px";
+  document.getElementById("floatingbtn4").style.borderTopLeftRadius= "50px 50px";
+  document.getElementById("floatingbtn5").style.borderTopRightRadius= "50px 50px";
+  document.getElementById("floatingbtn5").style.borderBottomRightRadius= "50px 50px";
+
+  document.getElementById("floatingbtn6"). style.borderTopRightRadius = "50px 50px";
+  document.getElementById("image"). style.borderTopRightRadius = "50px 50px";
+
+  
+
+  document.getElementById("floatingbtn4").style.height = "220px";
+  document.getElementById("floatingbtn5").style.width = "220px";
+  document.getElementById("floatingbtn1").style.width = "220px";
+  document.getElementById("floatingbtn2").style.width = "220px";
+  document.getElementById("floatingbtn3").style.height = "220px";
+
+
+}
+function awayFunFunction() {
+  document.getElementById("techi").style.opacity = 1;
+  restorePos();
+}
+function awayTechiFunction() {
+  document.getElementById("fun").style.opacity = 1;
+  restorePos();
+}
+function restorePos(){
+  clearInterval(timer_cal1);
+  document.getElementById("floatingbtn1").style.opacity = 0;
+  document.getElementById("floatingbtn2").style.opacity = 0;
+  document.getElementById("floatingbtn3").style.opacity = 0;
+  document.getElementById("floatingbtn4").style.opacity = 0;
+  document.getElementById("floatingbtn5").style.opacity = 0;
+
+  document.getElementById("floatingbtn1").style.transform = "translate(-50%, -50%)";
+  document.getElementById("floatingbtn2").style.transform = "translate(-50%, -50%)";
+ document.getElementById("floatingbtn3").style.transform = "translate(-50%, -50%)";
+document.getElementById("floatingbtn4").style.transform = "translate(-50%, -50%)";
+ document.getElementById("floatingbtn5").style.transform = "translate(-50%, -50%)";
+
+document.getElementById("image"). style.borderRadius = "100px";
+document.getElementById("floatingbtn1"). style.borderRadius = "100px";
+document.getElementById("floatingbtn2"). style.borderRadius = "100px";
+document.getElementById("floatingbtn3"). style.borderRadius = "100px";
+document.getElementById("floatingbtn4"). style.borderRadius = "100px";
+document.getElementById("floatingbtn5"). style.borderRadius = "100px";
+document.getElementById("floatingbtn6"). style.borderRadius = "100px";
+
+
+document.getElementById("floatingbtn4").style.height = "220px";
+  document.getElementById("floatingbtn5").style.width = "220px";
+  document.getElementById("floatingbtn1").style.width = "220px";
+  document.getElementById("floatingbtn2").style.width = "220px";
+  document.getElementById("floatingbtn3").style.height = "220px";
+
+  isON = 0;
+}
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+function autoProcess(){
+  myVar1 = setTimeout(moveTechiFunction, 700);
+  myVar2 = setTimeout(awayTechiFunction, 1400);
+  myVar3 = setTimeout(moveFunFunction, 2100);
+  myVar4 = setTimeout(awayFunFunction, 2800);
+}
+document.getElementById("defaultOpen").click();
+restorePos()
+autoProcess()
+
+
+
+</script>
+
+
+
+</body>
+</html>

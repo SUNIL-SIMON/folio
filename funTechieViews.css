@@ -1,0 +1,79 @@
+/* fun and techie */
+
+.leftSideButton {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  text-align: right;
+  font-size: 30px;
+  font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+  transition: all 0.5s;
+  cursor: pointer;
+  height : 400px;
+  float: left;
+}
+
+.rightSideButton {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Courier New";
+  transition: all 0.5s;
+  cursor: pointer;
+  height : 400px;
+  float: right;
+}
+
+.leftSideButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.rightSideButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.leftSideButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  bottom: 100px;
+  right: 50px;
+  transition: 0.5s;
+}
+.rightSideButton span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 100px;
+  left: 50px;
+  transition: 0.5s;
+}
+
+.leftSideButton:hover span {
+  padding-right: 100px;
+}
+.rightSideButton:hover span {
+  padding-left: 100px;
+}
+
+.leftSideButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.rightSideButton:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+/* fun and techie */
+/* image */
+
