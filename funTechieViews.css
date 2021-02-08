@@ -46,7 +46,7 @@
   content: '\00bb';
   position: absolute;
   opacity: 0;
-  bottom: 100px;
+  bottom: 255px;
   right: 50px;
   transition: 0.5s;
 }
@@ -54,7 +54,7 @@
   content: '\00ab';
   position: absolute;
   opacity: 0;
-  top: 100px;
+  top: 30px;
   left: 50px;
   transition: 0.5s;
 }
