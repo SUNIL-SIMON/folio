@@ -26,6 +26,7 @@
   cursor: pointer;
   height : 400px;
   float: right;
+  white-space: nowrap;
 }
 
 .leftSideButton span {

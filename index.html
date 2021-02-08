@@ -7,12 +7,14 @@
 <link rel="stylesheet" href="imageFlyers.css">
 <link rel="stylesheet" href="pageVerticalSpliter.css">
 <link rel="stylesheet" href="bottomCards.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>SUNIL SIMON</title>
 <body style="background-image: url( 'image.jpg' )">
 <style>
-      body {
+body {
         height: 100%;
         margin: 0;
+        
       }
 /*moved to css*/
 </style>
@@ -31,7 +33,7 @@
 
 
 </div>
-      <div class="row content1 content2sub">
+      <div id = c1 class="row content1 content2sub">
 
 <div id="aboutC1" class="tabcontent">
   <span onclick="this.parentElement.style.display='block'" class="btn-group" style="width:100%">
@@ -65,7 +67,15 @@
 
 </div>
 
- <button3 id="techi" onmousemove="moveTechiFunction()" onmouseleave="awayTechiFunction()" style="width:33.333%" class="rightSideButton"><span><br><b><u>TECHIE ME</u></b><br><br>- iOS Developer<br><br>- &lt;Web&gt;&lt;Developer&gt;<br><br>- Robotics<br><br>- IOT</span></button3> 
+ <button3 id="techi" onmousemove="moveTechiFunction()" onmouseleave="awayTechiFunction()" style="width:33.333%" class="rightSideButton">
+<span><br><b><u>
+TECHIE ME
+</u></b><br><br>
+- iOS developer
+<br><br>
+- Web Developer
+<br><br>
+- Robotics<br><br>- IOT</span></button3> 
 
   </span>
 </div>
@@ -181,6 +191,8 @@ function moveFunFunctionManual() {
   document.getElementById("floatingbtn1").style.width = "220px";
   document.getElementById("floatingbtn2").style.width = "220px";
   document.getElementById("floatingbtn3").style.height = "220px";
+
+document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1E3B70 40%,#29539Bcc)";
   
 }
 
@@ -233,6 +245,7 @@ function moveTechiFunctionManual() {
   document.getElementById("floatingbtn2").style.width = "220px";
   document.getElementById("floatingbtn3").style.height = "220px";
 
+ document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1E3B70cc,#29539B 40%)";
 
 }
 function awayFunFunction() {
@@ -273,6 +286,8 @@ document.getElementById("floatingbtn4").style.height = "220px";
   document.getElementById("floatingbtn1").style.width = "220px";
   document.getElementById("floatingbtn2").style.width = "220px";
   document.getElementById("floatingbtn3").style.height = "220px";
+
+document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1E3B70 40%,#29539Bcc)";
 
   isON = 0;
 }
