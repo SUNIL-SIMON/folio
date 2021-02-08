@@ -25,7 +25,7 @@
 
 <div class="tab">
   <button style="float: right" class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
-<button style="float: right" class="tablinks" onclick="openTab(event, 'about')" id="defaultOpen">About</button>
+<button style="float: right" class="tablinks" onclick="openTab(event, 'aboutC1')" id="defaultOpen">About</button>
 <d style="float: left" class="topName">SIMON</d>
 </div>
 
@@ -33,7 +33,7 @@
 </div>
       <div class="row content1 content2sub">
 
-<div id="about" class="tabcontent">
+<div id="aboutC1" class="tabcontent">
   <span onclick="this.parentElement.style.display='block'" class="btn-group" style="width:100%">
 
  <button1 id="fun" onmousemove="moveFunFunction()" style="width:33.333%"
@@ -78,7 +78,7 @@
 
 </div>
 
-<div class="row content2 content3sub">
+<div id="aboutC2" class="row content2 content3sub">
        
 <div class="btn-group" style="width:100%">
 
@@ -113,7 +113,8 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 </div>
 
 <div class="row footer">
-        <p></p>
+<button float = "right" class = "footButton">SUNIL SIMON C B
+</button>
 </div>
 
 </div>
@@ -121,7 +122,7 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 
 
 <div id="contact" class="tabcontent"> 
-  <span onclick="this.parentElement.style.display='block'" </span>
+  <span onclick="this.parentElement.style.display='block'" style = "color : ffffff"</span>
 </div>
 
 
@@ -281,6 +282,7 @@ function openTab(evt, tabName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
+
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
