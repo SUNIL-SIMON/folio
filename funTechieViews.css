@@ -4,7 +4,7 @@
   display: inline-block;
   background-color: #cdcdcd;
   border: none;
-  color: #000000;
+  color: #333333;
   text-align: right;
   font-size: 30px;
   font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
@@ -16,7 +16,7 @@
 
 .rightSideButton {
   display: inline-block;
-  background-color: transparent;
+  background-color: #fdfdfd;
   border: none;
   color: #000000;
   text-align: left;
