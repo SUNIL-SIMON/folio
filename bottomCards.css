@@ -1,0 +1,73 @@
+.bottomCardBasel {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+  transition: all 0.5s;
+  cursor: pointer;
+  height : 300px;
+  float : left
+}
+.bottomCardBasec {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+  transition: all 0.5s;
+  cursor: pointer;
+  height : 300px;
+  float : center
+}
+
+.bottomCardBaser {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+  transition: all 0.5s;
+  cursor: pointer;
+  height : 300px;
+  float : right
+}
+.bottomCard {
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  height : 80%;
+  width: 80%;
+  Top: 10%;
+  Left: 10%;
+  position: relative;
+  border-radius: 5%;
+  background-image: linear-gradient(to right, #70e1f5,#ffd194);
+}
+.bottomCardInner {
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+}
