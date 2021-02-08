@@ -30,14 +30,14 @@
 }
 .content2sub
 {
-      background-image: linear-gradient(180deg, #870000,#190a05);
+      background-image: linear-gradient(180deg, #ff6e7f,#0c0b0f);
 
 }
 .content3sub
 {
-      background-color: #000000;
+      background-color: #0c0b0f;
 }
 .box .row.footer {
         flex: 0 1 100px;
-        Background-color: #000000;
+        Background-color: #0c0b0f;
 }
