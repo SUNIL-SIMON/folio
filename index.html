@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="bottomCards.css">
 <link rel="stylesheet" href="alert.css">
 <link rel="stylesheet" href="socialmedias.css">
+<link rel="stylesheet" href="simages.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <title>SUNIL SIMON</title>
@@ -51,25 +52,35 @@ body {
 
 <div class="imagecontainer2" style="width:33.333%">
 
-<div id="floatingbtn1" class="floatingImageButton floatingImageButton1sub">
+<div id="floatingbtn1" class="floatingImageButton floatingImageButton1sub" >
+<img id = "img1" class="simagecards2" src="t1.jpg">
+</img>
 </div>
 
 <div id="floatingbtn2" class="floatingImageButton floatingImageButton2sub">
+<img id = "img2" class="simagecards2" src="tr3.png">
+</img>
 </div>
 
 <div id="floatingbtn3" class="floatingImageButton floatingImageButton3sub">
+
 </div>
 
 <div id="floatingbtn4" class="floatingImageButton floatingImageButton4sub">
+<img id = "img4" class="simagecards2" src="tr2.png">
+</img>
 </div>
 
 <div id="floatingbtn5" class="floatingImageButton floatingImageButton5sub">
+
 </div>
 
 <button id = "image" type="button" class= "imageButton">
+
 </button>
 
 <div id="floatingbtn6" class="floatingImageButton2 floatingImageButton6">
+
 </div>
 
 </div>
@@ -139,7 +150,7 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 </button5>
 <button5 float = "right" class = "fa fa-youtube" onclick="openYoutube()">
 </button5>
-<button5 float = "left" class = "footButton">SUNIL SIMON C B
+<button5 float = "left" class = "footButton">SUNIL SIMON C B<br>Chennai, India
 </button5>
 
 </div>
@@ -209,6 +220,10 @@ function moveFunFunctionManual() {
   document.getElementById("floatingbtn2").style.width = "220px";
   document.getElementById("floatingbtn3").style.height = "220px";
 
+document.getElementById("img1").style.left = "-180px";
+  document.getElementById("img2").style.left = "20px";
+  document.getElementById("img4").style.left = "20px";
+
 document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00cc)";
   
 }
@@ -245,7 +260,7 @@ function moveTechiFunctionManual() {
 
   document.getElementById("floatingbtn3").style.borderBottomRightRadius= "50px 50px";
   document.getElementById("floatingbtn2").style.borderBottomLeftRadius= "50px 50px";
-  document.getElementById("floatingbtn2").style.borderTopLeftRadius= "50px 50px";
+  document.getElementById("floatingbtn2").style.borderTopLeftRadius= "0px";
   document.getElementById("floatingbtn1").style.borderBottomLeftRadius= "50px 50px";
   document.getElementById("floatingbtn4").style.borderTopLeftRadius= "50px 50px";
   document.getElementById("floatingbtn5").style.borderTopRightRadius= "50px 50px";
@@ -262,10 +277,15 @@ function moveTechiFunctionManual() {
   document.getElementById("floatingbtn2").style.width = "220px";
   document.getElementById("floatingbtn3").style.height = "220px";
 
+document.getElementById("img1").style.left = "20px";
+  document.getElementById("img2").style.left = "20px";
+  document.getElementById("img4").style.left = "20px";
+
  document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #8e0e00cc,#1f1c18 40%)";
 
 }
 function awayFunFunction() {
+ document.getElementById("img1").style.left = "-50px";
   restorePos();
 }
 function awayTechiFunction() {
@@ -298,11 +318,14 @@ document.getElementById("floatingbtn5"). style.borderRadius = "100px";
 document.getElementById("floatingbtn6"). style.borderRadius = "100px";
 
 
-document.getElementById("floatingbtn4").style.height = "220px";
+  document.getElementById("floatingbtn4").style.height = "220px";
   document.getElementById("floatingbtn5").style.width = "220px";
   document.getElementById("floatingbtn1").style.width = "220px";
   document.getElementById("floatingbtn2").style.width = "220px";
   document.getElementById("floatingbtn3").style.height = "220px";
+
+
+
 
 document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00cc)";
 

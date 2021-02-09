@@ -57,6 +57,7 @@
   cursor: pointer;
   height : 250px;
   float: center;
+ 
 }
 .floatingImageButton {
   display: inline-block;
@@ -75,9 +76,22 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+ z-index: 1;
 }
 .floatingImageButton1sub {
-
+ z-index: 2;
+}
+.floatingImageButton2sub {
+ z-index: 2;
+}
+.floatingImageButton3sub {
+}
+.floatingImageButton4sub {
+ z-index: 2;
+}
+.floatingImageButton5sub {
+}
+.floatingImageButton6sub {
 }
 .floatingImageButton1 {
   display: inline-block;
