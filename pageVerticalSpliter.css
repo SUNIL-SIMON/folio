@@ -40,6 +40,7 @@ background-image: linear-gradient(to right,#8e0e00cc,#1f1c18 60%);
 .box .row.footer {
         flex: 0 1 60px;
         background-image: linear-gradient(to right,#8e0e00,#1f1c18);
+text-align: right;  
 }
 .footButton {
   background-color: transparent;
@@ -50,9 +51,10 @@ background-image: linear-gradient(to right,#8e0e00cc,#1f1c18 60%);
   cursor: pointer;
   padding: 14px 26px;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Arial Black';
   opacity : 1;
+  margin: 10px 10px; 
 
 }
 

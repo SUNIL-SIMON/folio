@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="pageVerticalSpliter.css">
 <link rel="stylesheet" href="bottomCards.css">
 <link rel="stylesheet" href="alert.css">
+<link rel="stylesheet" href="socialmedias.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <title>SUNIL SIMON</title>
 <body style="background-image: url( 'image.jpg' )" >
@@ -128,8 +130,18 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 </div>
 
 <div class="row footer">
-<button float = "right" class = "footButton">SUNIL SIMON C B
-</button>
+
+<button5 float = "right" class = "fa fa-linkedin" onclick="openLinkedin()">
+</button5>
+<button5 float = "right" class = "fa fa-facebook" onclick="openFacebook()">
+</button5>
+<button5 float = "right" class = "fa fa-instagram" onclick="openInstagram()">
+</button5>
+<button5 float = "right" class = "fa fa-youtube" onclick="openYoutube()">
+</button5>
+<button5 float = "left" class = "footButton">SUNIL SIMON C B
+</button5>
+
 </div>
 
 </div>
@@ -338,6 +350,22 @@ function autoProcess5(){
   awayFunFunction();
   }
 }
+function  openLinkedin()
+{
+  window.open("https://www.linkedin.com/in/sunil-simon-9146391b9/", "_blank"); 
+}
+function openFacebook()
+{
+ window.open("https://www.facebook.com/sunil.s.balraj", "_blank"); 
+}
+function openInstagram()
+{
+ window.open("https://www.instagram.com/sunil_simon8471/", "_blank"); 
+}
+function openYoutube()
+{
+}
+
 document.getElementById("defaultOpen").click();
 restorePos();
 autoProcess1();
