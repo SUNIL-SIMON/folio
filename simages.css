@@ -1,24 +1,26 @@
 .simagecards {
 object-fit: contain;
-height: 85%;
-Weight: 85%;
 text-align: center;
 position: relative;
 top: 15px;
 border-radius: 10px;
 
 }
+.simagecardssub {
+
+  
+}
 .simagecards2 {
+width: 360px;
+  height : 160px;
 object-fit: contain;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
   font-size: 20px;
   cursor: pointer;
-  height : 160px;
-  width: 360px;
   Top: 20px;
   position: relative;
   border-radius: 10px;
- 
+ transition: all 0.5s;
 }

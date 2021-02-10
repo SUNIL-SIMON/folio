@@ -53,12 +53,12 @@ body {
 <div class="imagecontainer2" style="width:33.333%">
 
 <div id="floatingbtn1" class="floatingImageButton floatingImageButton1sub" >
-<img id = "img1" class="simagecards2" src="t1.PNG">
+<img id = "img1" class="simagecards2">
 </img>
 </div>
 
 <div id="floatingbtn2" class="floatingImageButton floatingImageButton2sub">
-<img id = "img2" class="simagecards2" src="tr3.PNG">
+<img id = "img2" class="simagecards2 simagecardssub" src="tr3.PNG">
 </img>
 </div>
 
@@ -67,7 +67,7 @@ body {
 </div>
 
 <div id="floatingbtn4" class="floatingImageButton floatingImageButton4sub">
-<img id = "img4" class="simagecards2" src="tr2.PNG">
+<img id = "img4" class="simagecards2 simagecardssub" src="tr2.PNG">
 </img>
 </div>
 
@@ -80,7 +80,8 @@ body {
 </button>
 
 <div id="floatingbtn6" class="floatingImageButton2 floatingImageButton6">
-
+<img id = "img6" class="simagecards2" src="t1.jpg">
+</img>
 </div>
 
 </div>
@@ -167,11 +168,15 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 <script>
 var timer_cal1;
 var isON = 0;
+var isimagecorrected = 0
 var myVar1;
 var myVar2;
 var myVar3;
 var myVar4;
+var myVar5;
 var manual = 1;
+var cnt = 0;
+var srcArray =["tr2.PNG","tr1.PNG","tr3.PNG"]
 function moveFunFunction() {
   manual = 0;
   restorePos();
@@ -220,12 +225,19 @@ function moveFunFunctionManual() {
   document.getElementById("floatingbtn2").style.width = "220px";
   document.getElementById("floatingbtn3").style.height = "220px";
 
-document.getElementById("img1").style.left = "-180px";
+  
   document.getElementById("img2").style.left = "20px";
   document.getElementById("img4").style.left = "20px";
+  document.getElementById("img1").style.left = "20px";
+  document.getElementById("img6").style.left = "20px";
+
+document.getElementById("img6").style.opacity = "1";
+  document.getElementById("img1").style.opacity = "0";
+document.getElementById("floatingbtn6").style.zIndex = "2";
+  document.getElementById("floatingbtn1").style.zIndex = "1";
+
 
 document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00cc)";
-  
 }
 
 function moveTechiFunction() {
@@ -280,15 +292,34 @@ function moveTechiFunctionManual() {
 document.getElementById("img1").style.left = "20px";
   document.getElementById("img2").style.left = "20px";
   document.getElementById("img4").style.left = "20px";
+  document.getElementById("img6").style.left = "20px";
+
+document.getElementById("img6").style.opacity = "0";
+  document.getElementById("img1").style.opacity = "1";
+document.getElementById("floatingbtn6").style.zIndex = "1";
+  document.getElementById("floatingbtn1").style.zIndex = "2";
 
  document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #8e0e00cc,#1f1c18 40%)";
 
+changeTechImages();
+
+}
+function changeTechImages()
+{
+  if(cnt <= 3){
+    document.getElementById("img1").src= srcArray[cnt];
+    cnt = cnt + 1;
+  }
+  else{
+    cnt = 0;
+  }
 }
 function awayFunFunction() {
  document.getElementById("img1").style.left = "-50px";
   restorePos();
 }
 function awayTechiFunction() {
+
   restorePos();
 }
 function restorePos(){
@@ -309,7 +340,7 @@ function restorePos(){
 document.getElementById("floatingbtn4").style.transform = "translate(-50%, -50%)";
  document.getElementById("floatingbtn5").style.transform = "translate(-50%, -50%)";
 
-document.getElementById("image"). style.borderRadius = "100px";
+document.getElementById("image").style.borderRadius = "100px";
 document.getElementById("floatingbtn1"). style.borderRadius = "100px";
 document.getElementById("floatingbtn2"). style.borderRadius = "100px";
 document.getElementById("floatingbtn3"). style.borderRadius = "100px";
@@ -325,7 +356,11 @@ document.getElementById("floatingbtn6"). style.borderRadius = "100px";
   document.getElementById("floatingbtn3").style.height = "220px";
 
 
-
+  document.getElementById("img1").style.left = "20px";
+  document.getElementById("img2").style.left = "20px";
+  document.getElementById("img4").style.left = "20px";
+  document.getElementById("img6").style.opacity = "0";
+  document.getElementById("img1").style.opacity = "0";
 
 document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00cc)";
 
