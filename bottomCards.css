@@ -7,7 +7,7 @@
   font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
   transition: all 0.5s;
   cursor: pointer;
-  height : 300px;
+  height : 500px;
   float : left
 }
 .bottomCardBasec {
@@ -19,7 +19,7 @@
   font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
   transition: all 0.5s;
   cursor: pointer;
-  height : 300px;
+  height : 500px;
   float : center
 }
 
@@ -32,7 +32,7 @@
   font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
   transition: all 0.5s;
   cursor: pointer;
-  height : 300px;
+  height : 500px;
   float : right
 }
 .bottomCard {
