@@ -166,7 +166,12 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 
 
 <script>
-var timer_cal1;
+var timer1_cal1;
+var timer2_cal1;
+var timer1Open = 0;
+var timer2Open = 0;
+var cnt1 = 0;
+var cnt2 = 0;
 var isON = 0;
 var isimagecorrected = 0
 var myVar1;
@@ -175,8 +180,8 @@ var myVar3;
 var myVar4;
 var myVar5;
 var manual = 1;
-var cnt = 0;
-var srcArray =["tr2.PNG","tr1.PNG","tr3.PNG"]
+var srcArrayT1 =["tr2.jpg","tr1.jpg","tr3.jpg","trr4.jpg","tr5.jpg"];
+var srcArrayT2 =["ta1.jpg","ta2.jpg","ta3.jpg","ta4.jpg","ta5.jpg"];
 function moveFunFunction() {
   manual = 0;
   restorePos();
@@ -238,8 +243,25 @@ document.getElementById("floatingbtn6").style.zIndex = "2";
 
 
 document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00cc)";
-}
 
+ clearInterval(timer1_cal1);
+ timer1Open = 0;
+ if(timer2Open == 0){
+    timer2Open = 1;
+    changeFunImages();
+    timer2_cal1 = setInterval(changeFunImages, 1000);
+   }
+}
+function changeFunImages()
+{
+  if(cnt2 <= 2){
+    document.getElementById("img1").src= srcArray[cnt2];
+    cnt2 = cnt2 + 1;
+  }
+  if(cnt2 > 2){
+    cnt2 = 0;
+  }
+}
 function moveTechiFunction() {
   manual = 0;
   restorePos();
@@ -301,17 +323,24 @@ document.getElementById("floatingbtn6").style.zIndex = "1";
 
  document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #8e0e00cc,#1f1c18 40%)";
 
-changeTechImages();
+clearInterval(timer2_cal1);
+ timer2Open = 0;
+   if(timer1Open == 0){
+    timer1Open = 1;
+    changeTechImages();
+timer1_cal1 = setInterval(changeTechImages, 1000);
+   }
 
 }
 function changeTechImages()
 {
-  if(cnt <= 3){
-    document.getElementById("img1").src= srcArray[cnt];
-    cnt = cnt + 1;
+  if(cnt1 <= 4){
+    document.getElementById("img1").src = srcArrayT1[cnt1];
+    document.getElementById("img2").src = srcArrayT2[cnt1];
+    cnt1 = cnt1 + 1;
   }
-  else{
-    cnt = 0;
+  if(cnt1 > 4){
+    cnt1 = 0;
   }
 }
 function awayFunFunction() {
@@ -319,7 +348,8 @@ function awayFunFunction() {
   restorePos();
 }
 function awayTechiFunction() {
-
+  clearInterval(timer1_cal1);
+   timer1Open = 0;
   restorePos();
 }
 function restorePos(){
@@ -364,7 +394,14 @@ document.getElementById("floatingbtn6"). style.borderRadius = "100px";
 
 document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00cc)";
 
+ 
+
+  clearInterval(timer2_cal1);
+  timer2Open = 0;
+
   isON = 0;
+ 
+  
 }
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
