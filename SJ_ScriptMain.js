@@ -30,6 +30,7 @@ function resizedWindow() {
   resizeFUN_TECH_views(w);
   resizeImageFlyers(w);
   resizeBottomCards(w);
+  resizeTabs(w);
 
   var wdt7 = ((w * 0.14) * 3) + "px";
  document.getElementById("about_content1").style.height = wdt7;
@@ -83,6 +84,22 @@ function resizeBottomCards(width)
   document.getElementById("vcard1").style.height = wdt;
   document.getElementById("vcard2").style.height = wdt;
   document.getElementById("vcard3").style.height = wdt;
+}
+function resizeTabs(width)
+{
+  if(width < 500){
+	document.getElementById("defaultOpen").style.fontSize = "10px";
+	document.getElementById("tab2").style.fontSize = "10px";
+  }
+  else if(width < 1000){
+	document.getElementById("defaultOpen").style.fontSize = "15px";
+	document.getElementById("tab2").style.fontSize = "15px";
+  }
+  else
+  {
+	document.getElementById("defaultOpen").style.fontSize = "20px";
+	document.getElementById("tab2").style.fontSize = "20px";
+  }
 }
 function restoreOpacity(){
   document.getElementById("techi").style.opacity = 1;
