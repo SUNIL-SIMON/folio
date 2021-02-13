@@ -42,7 +42,7 @@ function openTab(evt, tabName) {
     tabcontent[i].style.display = "none";
   }
 
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("tab button");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
