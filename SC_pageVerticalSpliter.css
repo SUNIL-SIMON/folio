@@ -9,7 +9,7 @@
 }
 .box .row.header {
         flex: 0 0 auto;
-background-image: linear-gradient(to right,#8e0e00cc,#1f1c18 60%);
+background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
 }
 .box .row.content1 {
         flex: 1 1 20px;
@@ -30,7 +30,7 @@ background-image: linear-gradient(to right,#8e0e00cc,#1f1c18 60%);
 }
 .content3sub
 {
-      background-image: linear-gradient(to right,#8e0e00cc,#000000 60%);
+      background-image: linear-gradient(to right,#8e0e00b3,#000000 60%);
 }
 .box .row.footer {
         flex: 0 1 auto;
