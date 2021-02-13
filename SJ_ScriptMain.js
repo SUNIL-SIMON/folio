@@ -29,6 +29,7 @@ function resizedWindow() {
 
   resizeFUN_TECH_views(w);
   resizeImageFlyers(w);
+  resizeBottomCards(w);
 
   var wdt7 = ((w * 0.14) * 3) + "px";
  document.getElementById("about_content1").style.height = wdt7;
@@ -75,6 +76,13 @@ function resizeImageFlyers(width)
   document.getElementById("aboutC1").style.padding = wdt2;
   var wdt3 =  (width * 0.09) + "px"
   document.getElementById("imagecontainer").style.top = wdt3;
+}
+function resizeBottomCards(width)
+{
+  var wdt =  (width * 0.34) + "px"
+  document.getElementById("vcard1").style.height = wdt;
+  document.getElementById("vcard2").style.height = wdt;
+  document.getElementById("vcard3").style.height = wdt;
 }
 function restoreOpacity(){
   document.getElementById("techi").style.opacity = 1;
@@ -338,3 +346,19 @@ function restorePos(){
  
   
 }
+function  openLinkedin()
+{
+  window.open("https://www.linkedin.com/in/sunil-simon-9146391b9/", "_blank"); 
+}
+function openFacebook()
+{
+ window.open("https://www.facebook.com/sunil.s.balraj", "_blank"); 
+}
+function openInstagram()
+{
+ window.open("https://www.instagram.com/sunil_simon8471/", "_blank"); 
+}
+function openYoutube()
+{
+}
+

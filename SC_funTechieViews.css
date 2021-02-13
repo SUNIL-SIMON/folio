@@ -60,10 +60,10 @@
 }
 
 .leftSideButton:hover span {
-  padding-right: 100px;
+  padding-right: 30%;
 }
 .rightSideButton:hover span {
-  padding-left: 100px;
+  padding-left:  30%;
 }
 
 .leftSideButton:hover span:after {

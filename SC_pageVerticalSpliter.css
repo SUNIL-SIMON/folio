@@ -33,12 +33,28 @@ background-image: linear-gradient(to right,#8e0e00cc,#1f1c18 60%);
       background-image: linear-gradient(to right,#8e0e00cc,#000000 60%);
 }
 .box .row.footer {
-        flex: 0 1 60px;
+        flex: 0 1 160px;
         background-image: linear-gradient(to right,#8e0e00,#1f1c18);
-text-align: right;  
+        text-align: right;  
 }
+.footView {
+  background-image: linear-gradient(to right,#1f1c18,#000000);
+  border: none;
+  outline: none;
+  color : #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+  font-family: 'Arial Black';
+  opacity : 1;
+  text-align: right; 
+
+}
+
+
 .footButton {
   background-color: transparent;
+  
   float: right;
   border: none;
   outline: none;
