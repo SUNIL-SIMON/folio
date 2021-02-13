@@ -88,8 +88,8 @@ function resizeBottomCards(width)
 function resizeTabs(width)
 {
   if(width < 500){
-	document.getElementById("defaultOpen").style.fontSize = "10px";
-	document.getElementById("tab2").style.fontSize = "10px";
+	document.getElementById("defaultOpen").style.fontSize = "13px";
+	document.getElementById("tab2").style.fontSize = "13px";
   }
   else if(width < 1000){
 	document.getElementById("defaultOpen").style.fontSize = "15px";
