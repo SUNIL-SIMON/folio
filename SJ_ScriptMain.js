@@ -31,7 +31,7 @@ function resizedWindow() {
   resizeImageFlyers(w);
   resizeBottomCards(w);
   resizeTabs(w);
-
+  resizeSocialButtons(w);
   var wdt7 = ((w * 0.14) * 3) + "px";
  document.getElementById("about_content1").style.height = wdt7;
 }
@@ -100,6 +100,20 @@ function resizeTabs(width)
 	document.getElementById("defaultOpen").style.fontSize = "20px";
 	document.getElementById("tab2").style.fontSize = "20px";
   }
+}
+function resizeSocialButtons(width)
+{
+ if(width < 500){
+	document.getElementById("social5").style.fontSize = "10px";
+  }
+  else if(width < 1000){
+	document.getElementById("social5").style.fontSize = "13px";
+  }
+  else
+  {
+	document.getElementById("social5").style.fontSize = "18px";
+  }
+  
 }
 function restoreOpacity(){
   document.getElementById("techi").style.opacity = 1;

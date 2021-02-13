@@ -33,7 +33,7 @@ background-image: linear-gradient(to right,#8e0e00cc,#1f1c18 60%);
       background-image: linear-gradient(to right,#8e0e00cc,#000000 60%);
 }
 .box .row.footer {
-        flex: 0 1 160px;
+        flex: 0 1 auto;
         background-image: linear-gradient(to right,#8e0e00,#1f1c18);
         text-align: right;  
 }
@@ -53,8 +53,7 @@ background-image: linear-gradient(to right,#8e0e00cc,#1f1c18 60%);
 
 
 .footButton {
-  background-color: transparent;
-  
+  background-color: #000000;
   float: right;
   border: none;
   outline: none;
