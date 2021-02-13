@@ -70,8 +70,7 @@
   cursor: pointer;
   transition: all 0.5s;
   position: absolute;
-  height : 200px;
-  width: 200px;
+
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -154,9 +153,9 @@ background-color: #e65c00;
   background-color: transparent;
   text-align: center;
   float: center;
-  height: 200px;
+  height: 100px;
   position: relative;
-  top: 75px;
+  top: 130px;
 }
 
 .center {

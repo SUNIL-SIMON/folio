@@ -2,18 +2,17 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="topTab.css">
-<link rel="stylesheet" href="funTechieViews.css">
-<link rel="stylesheet" href="imageFlyers.css">
-<link rel="stylesheet" href="pageVerticalSpliter.css">
-<link rel="stylesheet" href="bottomCards.css">
-<link rel="stylesheet" href="alert.css">
-<link rel="stylesheet" href="socialmedias.css">
-<link rel="stylesheet" href="simages.css">
+<link rel="stylesheet" href="SC_topTab.css">
+<link rel="stylesheet" href="SC_funTechieViews.css">
+<link rel="stylesheet" href="SC_imageFlyers.css">
+<link rel="stylesheet" href="SC_pageVerticalSpliter.css">
+<link rel="stylesheet" href="SC_bottomCards.css">
+<link rel="stylesheet" href="SC_alert.css">
+<link rel="stylesheet" href="SC_socialmedias.css">
+<link rel="stylesheet" href="SC_simages.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <title>SUNIL SIMON</title>
-<body style="background-image: url( 'image.jpg' )" >
+<body style="background-image: url( 'SI_BGimage.jpg' )" >
 <style>
 body {
         height: 100%;
@@ -23,34 +22,37 @@ body {
 /*moved to css*/
 </style>
 </head>
-<body>
-
-<div class="box">
-      <div class="row header">
-
+<body onresize="resizedWindow()">
+<!-- ***************************************** ALERT ROW-->
 <div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  <strong>Sorry!</strong> I am renovating my website, for now I am happy to welcome you, but please also visit later for a completed version.
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong>Sorry!</strong> I am renovating my website, for now I am happy to welcome you, but please also visit later for a completed version.
 </div>
+<!-- ***************************************** ALL TABS ROW -->
+<div class="box">
+ <div class="row header">
 
-<div class="tab">
-  <button style="float: right" class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
-<button style="float: right" class="tablinks" onclick="openTab(event, 'aboutC1')" id="defaultOpen">About</button>
-<d style="float: left" class="topName">SIMON</d>
+  <div class="tab">
+   <button style="float: right" class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
+   <button style="float: right" class="tablinks" onclick="openTab(event, 'aboutC1')" id="defaultOpen">About</button>
+   <d id = "name" style="float: left" class="topName">SIMON</d>
+  </div>
+
+ </div>
 </div>
-
-
-</div>
-      <div id = c1 class="row content1 content2sub">
+<!-- ***************************************** ABOUT CONTENT 1 -->
+<div id = about_content1 class="row content1 content2sub">
 
 <div id="aboutC1" class="tabcontent">
   <span onclick="this.parentElement.style.display='block'" class="btn-group" style="width:100%">
 
- <button1 id="fun" onmousemove="moveFunFunction()" style="width:33.333%"
- onmouseleave="awayFunFunction()" class="leftSideButton"><span><br><b><u>FUN ME</u></b><br><br>- Mountain Biker<br><br>- Guitarist<br><br>- Scuba</span></button1>
+  <button1 id="fun" onmousemove="moveFunFunction()" style="width:33.333%"
+ onmouseleave="awayFunFunction()" class="leftSideButton">
+<span>
+<br><b><u>FUN ME</u></b><br><br>- Mountain Biker<br><br>- Guitarist<br><br>- Scuba
+</span></button1>
 
 
-<div class="imagecontainer2" style="width:33.333%">
+<div id="imagecontainer" class="imagecontainer2" style="width:33.333%">
 
 <div id="floatingbtn1" class="floatingImageButton floatingImageButton1sub" >
 <img id = "img1" class="simagecards2">
@@ -87,26 +89,12 @@ body {
 </div>
 
  <button3 id="techi" onmousemove="moveTechiFunction()" onmouseleave="awayTechiFunction()" style="width:33.333%" class="rightSideButton">
-<span><br><b><u>
-TECHIE ME
-</u></b><br><br>
-- iOS developer
-<br><br>
-- Web Developer
-<br><br>
-- Robotics<br><br>- IOT</span></button3> 
-
-  </span>
-</div>
-
-
-
-<div id="contact" class="tabcontent"> 
-  <span onclick="this.parentElement.style.display='block'" </span>
+<span>
+<br><b><u>TECHIE ME</u></b><br><br>- iOS developer<br><br>- Web Developer<br><br>- Robotics<br><br>- IOT</span></button3>
 </div>
 
 </div>
-
+<!-- ***************************************** ABOUT CONTENT 2 -->
 <div id="aboutC2" class="row content2 content3sub">
        
 <div class="btn-group" style="width:100%">
@@ -140,337 +128,15 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 
 
 </div>
-
-<div class="row footer">
-
-<button5 float = "right" class = "fa fa-linkedin" onclick="openLinkedin()">
-</button5>
-<button5 float = "right" class = "fa fa-facebook" onclick="openFacebook()">
-</button5>
-<button5 float = "right" class = "fa fa-instagram" onclick="openInstagram()">
-</button5>
-<button5 float = "right" class = "fa fa-youtube" onclick="openYoutube()">
-</button5>
-<button5 float = "left" class = "footButton">SUNIL SIMON C B<br>Chennai, India
-</button5>
-
-</div>
-
-</div>
-
-
+<!-- *****************************************CONTACT TAB -->
 
 <div id="contact" class="tabcontent"> 
   <span onclick="this.parentElement.style.display='block'" style = "color : ffffff"</span>
+<button type="button" onclick="alert('Hello world!')">donkey king Me!</button>
 </div>
-
-
-<script>
-var timer1_cal1;
-var timer2_cal1;
-var timer1Open = 0;
-var timer2Open = 0;
-var cnt1 = 0;
-var cnt2 = 0;
-var isON = 0;
-var isimagecorrected = 0
-var myVar1;
-var myVar2;
-var myVar3;
-var myVar4;
-var myVar5;
-var manual = 1;
-var srcArrayT1 =["tr2.jpg","tr1.jpg","tr3.jpg","trr4.jpg","tr5.jpg"];
-var srcArrayT2 =["ta1.jpg","ta2.jpg","ta3.jpg","ta4.jpg","ta5.jpg"];
-var srcArrayT3 =["td1.jpg","td2.jpg","td1.jpg","td2.jpg","td1.jpg"];
-function moveFunFunction() {
-  manual = 0;
-  restorePos();
-  moveFunFunctionManual();
-}
-function moveFunFunctionManual() {
-  document.getElementById("image"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn6"). style.borderRadius = "0px";
-
-  document.getElementById("floatingbtn1"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn2"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn3"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn4"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn5"). style.borderRadius = "0px";
-
-  document.getElementById("techi").style.opacity = 0;
-  document.getElementById("floatingbtn1").style.opacity = 1;
-  document.getElementById("floatingbtn2").style.opacity = 1;
-  document.getElementById("floatingbtn3").style.opacity = 1;
-  document.getElementById("floatingbtn4").style.opacity = 1;
-  document.getElementById("floatingbtn5").style.opacity = 1;
-  document.getElementById("floatingbtn6").style.opacity = 1;
-
-  document.getElementById("floatingbtn1").style.transform = "translate(45.5%, -50%)";
-  document.getElementById("floatingbtn2").style.transform = "translate(-45%, 60%)";
-  document.getElementById("floatingbtn3").style.transform = "translate(60%, 45.5%)";
-  document.getElementById("floatingbtn4").style.transform = "translate(-50%, -145.5%)";
-  document.getElementById("floatingbtn5").style.transform = "translate(45%, -160%)";
-
-  document.getElementById("floatingbtn2").style.borderBottomLeftRadius= "50px 50px";
-  document.getElementById("floatingbtn2").style.borderTopLeftRadius= "50px 50px";
-  document.getElementById("floatingbtn3").style.borderBottomRightRadius= "50px 50px";
-  document.getElementById("floatingbtn1").style.borderTopRightRadius= "50px 50px";
-  document.getElementById("floatingbtn4").style.borderTopLeftRadius= "50px 50px";
-  document.getElementById("floatingbtn5").style.borderBottomRightRadius= "50px 50px";
-  document.getElementById("floatingbtn5").style.borderTopRightRadius= "50px 50px";
-
-  document.getElementById("floatingbtn6"). style.borderBottomLeftRadius = "50px 50px";
-  document.getElementById("image"). style.borderBottomLeftRadius = "50px 50px";
-
-
-
-  document.getElementById("floatingbtn4").style.height = "220px";
-  document.getElementById("floatingbtn5").style.width = "220px";
-  document.getElementById("floatingbtn1").style.width = "220px";
-  document.getElementById("floatingbtn2").style.width = "220px";
-  document.getElementById("floatingbtn3").style.height = "220px";
-
-  
-  document.getElementById("img2").style.left = "20px";
-  document.getElementById("img4").style.left = "20px";
-  document.getElementById("img1").style.left = "20px";
-  document.getElementById("img6").style.left = "20px";
-
-document.getElementById("img6").style.opacity = "1";
-  document.getElementById("img1").style.opacity = "0";
-document.getElementById("floatingbtn6").style.zIndex = "2";
-  document.getElementById("floatingbtn1").style.zIndex = "1";
-
-
-document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00cc)";
-
- clearInterval(timer1_cal1);
- timer1Open = 0;
- if(timer2Open == 0){
-    timer2Open = 1;
-    changeFunImages();
-    timer2_cal1 = setInterval(changeFunImages, 1000);
-   }
-}
-function changeFunImages()
-{
-  if(cnt2 <= 2){
-    document.getElementById("img1").src= srcArray[cnt2];
-    cnt2 = cnt2 + 1;
-  }
-  if(cnt2 > 2){
-    cnt2 = 0;
-  }
-}
-function moveTechiFunction() {
-  manual = 0;
-  restorePos();
-  moveTechiFunctionManual();
-}
-
-function moveTechiFunctionManual() {
-  document.getElementById("image"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn6"). style.borderRadius = "0px";
-
-  document.getElementById("floatingbtn1"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn2"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn3"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn4"). style.borderRadius = "0px";
-  document.getElementById("floatingbtn5"). style.borderRadius = "0px";
-
-  document.getElementById("fun").style.opacity = 0;
-  document.getElementById("floatingbtn1").style.opacity = 1;
-  document.getElementById("floatingbtn2").style.opacity = 1;
-  document.getElementById("floatingbtn4").style.opacity = 1;
-  document.getElementById("floatingbtn5").style.opacity = 1;
-  document.getElementById("floatingbtn3").style.opacity = 1;
-  document.getElementById("floatingbtn6").style.opacity = 1;
-
-  document.getElementById("floatingbtn1").style.transform = "translate(-145%, -50%)";
-  document.getElementById("floatingbtn2").style.transform = "translate(-145%, 60%)";
-  document.getElementById("floatingbtn3").style.transform = "translate(-50%, 45.5%)";
-  document.getElementById("floatingbtn4").style.transform = "translate(-159.5%, -145.5%)";
-  document.getElementById("floatingbtn5").style.transform = "translate(-55%, -160%)";
-
-  document.getElementById("floatingbtn3").style.borderBottomRightRadius= "50px 50px";
-  document.getElementById("floatingbtn2").style.borderBottomLeftRadius= "50px 50px";
-  document.getElementById("floatingbtn2").style.borderTopLeftRadius= "0px";
-  document.getElementById("floatingbtn1").style.borderBottomLeftRadius= "50px 50px";
-  document.getElementById("floatingbtn4").style.borderTopLeftRadius= "50px 50px";
-  document.getElementById("floatingbtn5").style.borderTopRightRadius= "50px 50px";
-  document.getElementById("floatingbtn5").style.borderBottomRightRadius= "50px 50px";
-
-  document.getElementById("floatingbtn6"). style.borderTopRightRadius = "50px 50px";
-  document.getElementById("image"). style.borderTopRightRadius = "50px 50px";
-
-  
-
-  document.getElementById("floatingbtn4").style.height = "220px";
-  document.getElementById("floatingbtn5").style.width = "220px";
-  document.getElementById("floatingbtn1").style.width = "220px";
-  document.getElementById("floatingbtn2").style.width = "220px";
-  document.getElementById("floatingbtn3").style.height = "220px";
-
-document.getElementById("img1").style.left = "20px";
-  document.getElementById("img2").style.left = "20px";
-  document.getElementById("img4").style.left = "20px";
-  document.getElementById("img6").style.left = "20px";
-
-document.getElementById("img6").style.opacity = "0";
-  document.getElementById("img1").style.opacity = "1";
-document.getElementById("floatingbtn6").style.zIndex = "1";
-  document.getElementById("floatingbtn1").style.zIndex = "2";
-
- document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #8e0e00cc,#1f1c18 40%)";
-
-clearInterval(timer2_cal1);
- timer2Open = 0;
-   if(timer1Open == 0){
-    timer1Open = 1;
-    changeTechImages();
-timer1_cal1 = setInterval(changeTechImages, 1000);
-   }
-
-}
-function changeTechImages()
-{
-  if(cnt1 <= 4){
-    document.getElementById("img1").src = srcArrayT1[cnt1];
-    document.getElementById("img2").src = srcArrayT2[cnt1];
-    document.getElementById("img4").src = srcArrayT3[cnt1];
-    cnt1 = cnt1 + 1;
-  }
-  if(cnt1 > 4){
-    cnt1 = 0;
-  }
-}
-function awayFunFunction() {
- document.getElementById("img1").style.left = "-50px";
-  restorePos();
-}
-function awayTechiFunction() {
-  clearInterval(timer1_cal1);
-   timer1Open = 0;
-  restorePos();
-}
-function restorePos(){
-  document.getElementById("techi").style.opacity = 1;
-  document.getElementById("fun").style.opacity = 1;
-
-  document.getElementById("floatingbtn1").style.opacity = 0;
-  document.getElementById("floatingbtn2").style.opacity = 0;
-  document.getElementById("floatingbtn3").style.opacity = 0;
-  document.getElementById("floatingbtn4").style.opacity = 0;
-  document.getElementById("floatingbtn5").style.opacity = 0;
-  document.getElementById("image").style.opacity = 0;
-  document.getElementById("floatingbtn6").style.opacity = 0;
-
-  document.getElementById("floatingbtn1").style.transform = "translate(-50%, -50%)";
-  document.getElementById("floatingbtn2").style.transform = "translate(-50%, -50%)";
- document.getElementById("floatingbtn3").style.transform = "translate(-50%, -50%)";
-document.getElementById("floatingbtn4").style.transform = "translate(-50%, -50%)";
- document.getElementById("floatingbtn5").style.transform = "translate(-50%, -50%)";
-
-document.getElementById("image").style.borderRadius = "100px";
-document.getElementById("floatingbtn1"). style.borderRadius = "100px";
-document.getElementById("floatingbtn2"). style.borderRadius = "100px";
-document.getElementById("floatingbtn3"). style.borderRadius = "100px";
-document.getElementById("floatingbtn4"). style.borderRadius = "100px";
-document.getElementById("floatingbtn5"). style.borderRadius = "100px";
-document.getElementById("floatingbtn6"). style.borderRadius = "100px";
-
-
-  document.getElementById("floatingbtn4").style.height = "220px";
-  document.getElementById("floatingbtn5").style.width = "220px";
-  document.getElementById("floatingbtn1").style.width = "220px";
-  document.getElementById("floatingbtn2").style.width = "220px";
-  document.getElementById("floatingbtn3").style.height = "220px";
-
-
-  document.getElementById("img1").style.left = "20px";
-  document.getElementById("img2").style.left = "20px";
-  document.getElementById("img4").style.left = "20px";
-  document.getElementById("img6").style.opacity = "0";
-  document.getElementById("img1").style.opacity = "0";
-
-document.getElementById("c1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00cc)";
-
- 
-
-  clearInterval(timer2_cal1);
-  timer2Open = 0;
-
-  isON = 0;
- 
-  
-}
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-function autoProcess1(){
-  if(manual == 1){
-  myVar1 = setTimeout(autoProcess2, 700);
-  }
-}
-function autoProcess2(){
-  if(manual == 1){
-  moveTechiFunctionManual();
-  myVar2 = setTimeout(autoProcess3, 700);
-  }
-}
-function autoProcess3(){
-  if(manual == 1){
-  awayTechiFunction();
-  myVar3 = setTimeout(autoProcess4, 700);
-  }
-}
-function autoProcess4(){
-  if(manual == 1){
-  moveFunFunctionManual();
-  myVar4 = setTimeout(autoProcess5, 700);
-  }
-}
-function autoProcess5(){
-  if(manual == 1){
-  awayFunFunction();
-  }
-}
-function  openLinkedin()
-{
-  window.open("https://www.linkedin.com/in/sunil-simon-9146391b9/", "_blank"); 
-}
-function openFacebook()
-{
- window.open("https://www.facebook.com/sunil.s.balraj", "_blank"); 
-}
-function openInstagram()
-{
- window.open("https://www.instagram.com/sunil_simon8471/", "_blank"); 
-}
-function openYoutube()
-{
-}
-
-document.getElementById("defaultOpen").click();
-restorePos();
-autoProcess1();
-
-
+<!-- ***************************************** -->
+<script src="SJ_ScriptMain.js">
 </script>
-
-
 
 </body>
 </html>

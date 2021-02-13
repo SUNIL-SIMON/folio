@@ -3,11 +3,6 @@
         flex-flow: column;
         height: 100%;
 }
-.box {
-        display: flex;
-        flex-flow: column;
-        height: 100%;
-}
 .box .row {
  
 
@@ -17,7 +12,7 @@
 background-image: linear-gradient(to right,#8e0e00cc,#1f1c18 60%);
 }
 .box .row.content1 {
-        flex: 1 1 200px;
+        flex: 1 1 20px;
 }
 .content1sub
 {

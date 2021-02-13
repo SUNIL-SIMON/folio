@@ -8,9 +8,8 @@
   text-align: right;
   font-size: 30px;
   font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
-  transition: all 0.5s;
   cursor: pointer;
-  height : 400px;
+  height : 100px;
   float: left;
 }
 
@@ -24,7 +23,7 @@
   font-family: "Courier New";
   transition: all 0.5s;
   cursor: pointer;
-  height : 400px;
+  height : 100px;
   float: right;
   white-space: nowrap;
 }
@@ -47,7 +46,7 @@
   content: '\00bb';
   position: absolute;
   opacity: 0;
-  bottom: 255px;
+  bottom: 50%;
   right: 50px;
   transition: 0.5s;
 }
@@ -55,7 +54,7 @@
   content: '\00ab';
   position: absolute;
   opacity: 0;
-  top: 30px;
+  top: 50%;
   left: 50px;
   transition: 0.5s;
 }
@@ -74,6 +73,12 @@
 .rightSideButton:hover span:after {
   opacity: 1;
   left: 0;
+}
+.tabcontent {
+  display: none;
+  border: none;
+  padding: 0px 0px;
+  height:30px;
 }
 /* fun and techie */
 /* image */
