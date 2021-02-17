@@ -22,7 +22,6 @@ document.getElementById("defaultOpen").click();
 resizedWindow();
 restoreOpacity();
 restoreColors();
-
 function resizedWindow() {
   var w = window.outerWidth;
   var h = window.outerHeight;
@@ -33,7 +32,10 @@ function resizedWindow() {
   resizeTabs(w);
   resizeSocialButtons(w);
   var wdt7 = ((w * 0.14) * 3) + "px";
+  var wdt8 = ((w * 0.14) * 2.3) + "px";
  document.getElementById("about_content1").style.height = wdt7;
+ document.getElementById("fun").style.height = wdt8;
+ document.getElementById("techi").style.height = wdt8;
 }
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
@@ -373,6 +375,9 @@ function restorePos(){
   clearInterval(timer2_cal1);
   timer2Open = 0;
 
+  clearInterval(timer1_cal1);
+  timer1Open = 0;
+
   isON = 0;
  
   
@@ -392,4 +397,37 @@ function openInstagram()
 function openYoutube()
 {
 }
-
+function openWorkLocation()
+{
+  window.open("https://www.google.com/maps/place/Zoho+Corporation/@12.8312294,80.0471839,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5260db1ff54b03:0xa8af6b8bb6419d6f!8m2!3d12.8312242!4d80.0493726", "_blank"); 
+}
+function autoProcess1(){
+  if(manual == 1){
+  myVar1 = setTimeout(autoProcess2, 1700);
+  }
+}
+function autoProcess2(){
+  if(manual == 1){
+  timer1Open = 1;
+  moveTechiFunctionManual();
+  myVar2 = setTimeout(autoProcess3, 1700);
+  }
+}
+function autoProcess3(){
+  if(manual == 1){
+  awayTechiFunction();
+  myVar3 = setTimeout(autoProcess4, 1700);
+  }
+}
+function autoProcess4(){
+  if(manual == 1){
+  timer2Open = 1;
+  moveFunFunctionManual();
+  myVar4 = setTimeout(autoProcess5, 1700);
+  }
+}
+function autoProcess5(){
+  if(manual == 1){
+  awayFunFunction();
+  }
+}
