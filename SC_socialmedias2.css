@@ -1,11 +1,11 @@
 .socialm {
+  Background-color : transparent;
   opacity: 1;
   z-index: -1; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
-  padding: 40px;  
 }
 .socialm:hover {
   opacity: 0.7;
