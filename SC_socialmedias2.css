@@ -7,8 +7,8 @@
   display: inline-block;
   margin : 0px 0px;
  padding:0;
+position: relative;
  text-align:center;
- display: inline-block;
 }
 .socialm:hover {
   opacity: 0.7;
@@ -27,4 +27,61 @@
 }
 .socialmeds {
    display: inline-block;
+}
+.work {
+  Background-color : transparent;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin : 0px 0px;
+ padding:0;
+position: relative;
+}
+.workwebsite {
+  Background-color : transparent;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin : 0px 0px;
+ padding:0;
+position: relative;
+}
+
+.workwebsite1 {
+  Background-color : transparent;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin : 0px 0px;
+ padding:0;
+position: relative;
+}
+.workwebsite2 {
+  Background-color : transparent;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin : 0px 0px;
+ padding:0;
+position: relative;
+}
+.websitetext{
+ text-align: center;
+}
+.websitetext2{
+ text-align: center;
+}
+.worklocation {
+  background-image: url('SI_loc.png');
+}
+.worksite {
+  background-image: url('SI_domain.png');
 }

@@ -106,12 +106,15 @@ function resizeTabs(width)
 function resizeSocialButtons(width)
 {
 
- 	var wdt2 =  ((width * 0.60) * 0.20) + "px"
+ 	var wdt2 =  ((width * 0.80) * 0.10) + "px"
+         var wdt3 =  (((width * 0.80) * 0.10) * 0.5) + "px"
+        document.getElementById("socialmeds").style.height = wdt2;
         document.getElementById("social1").style.height = wdt2;
         document.getElementById("social2").style.height = wdt2;
         document.getElementById("social3").style.height = wdt2;
         document.getElementById("social4").style.height = wdt2;
-        document.getElementById("socialmeds").style.height = wdt2;
+        document.getElementById("social5").style.height = wdt2;
+        document.getElementById("social6").style.height = wdt2;
 }
 function restoreOpacity(){
   document.getElementById("techi").style.opacity = 1;
@@ -397,6 +400,11 @@ function openWorkLocation()
 {
   window.open("https://www.google.com/maps/place/Zoho+Corporation/@12.8312294,80.0471839,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5260db1ff54b03:0xa8af6b8bb6419d6f!8m2!3d12.8312242!4d80.0493726", "_blank"); 
 }
+function openWorkSite()
+{
+  window.open("https://www.zoho.com", "_blank"); 
+}
+
 function autoProcess1(){
   if(manual == 1){
   myVar1 = setTimeout(autoProcess2, 1700);
