@@ -36,7 +36,6 @@ background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
 .box .row.footer {
         flex: 0 1 auto;
         background-image: linear-gradient(to right,#8e0e00,#1f1c18);
-        text-align: right;  
 }
 .footView {
   background-image: linear-gradient(to right,#1f1c18,#000000);
@@ -49,7 +48,6 @@ background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
   font-family: 'Arial Black';
   opacity : 1;
   text-align: right; 
-
 }
 
 
