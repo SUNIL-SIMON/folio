@@ -108,7 +108,7 @@ function resizeSocialButtons(width)
 
  if(width < 500){
 	document.getElementById("social5").style.fontSize = "8px";
-        var wdt1 =  (width * 0.015) + "px"
+        var wdt1 =  (width * 0.005) + "px"
         document.getElementById("social1").style.width = wdt1;
         document.getElementById("social1").style.height = wdt1;
 	document.getElementById("social2").style.width = wdt1;
