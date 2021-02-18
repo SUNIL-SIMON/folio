@@ -130,7 +130,7 @@ function restoreOpacity(){
   document.getElementById("image").style.opacity = 0;
 }
 function restoreColors(){
- document.getElementById("about_content1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00b3)";
+ document.getElementById("about_content1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00bf)";
 }
 
 
