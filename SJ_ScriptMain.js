@@ -105,15 +105,43 @@ function resizeTabs(width)
 }
 function resizeSocialButtons(width)
 {
+
  if(width < 500){
 	document.getElementById("social5").style.fontSize = "10px";
+        var wdt1 =  (width * 0.025) + "px"
+        document.getElementById("social1").style.width = wdt1;
+        document.getElementById("social1").style.height = wdt1;
+	document.getElementById("social2").style.width = wdt1;
+        document.getElementById("social2").style.height = wdt1;
+	document.getElementById("social3").style.width = wdt1;
+        document.getElementById("social3").style.height = wdt1;
+	document.getElementById("social4").style.width = wdt1;
+        document.getElementById("social4").style.height = wdt1;
   }
   else if(width < 1000){
 	document.getElementById("social5").style.fontSize = "13px";
+        var wdt1 =  (width * 0.025) + "px"
+        document.getElementById("social1").style.width = wdt1;
+        document.getElementById("social1").style.height = wdt1;
+	document.getElementById("social2").style.width = wdt1;
+        document.getElementById("social2").style.height = wdt1;
+	document.getElementById("social3").style.width = wdt1;
+        document.getElementById("social3").style.height = wdt1;
+	document.getElementById("social4").style.width = wdt1;
+        document.getElementById("social4").style.height = wdt1;
   }
   else
   {
 	document.getElementById("social5").style.fontSize = "18px";
+	var wdt1 =  (width * 0.025) + "px"
+        document.getElementById("social1").style.width = wdt1;
+        document.getElementById("social1").style.height = wdt1;
+	document.getElementById("social2").style.width = wdt1;
+        document.getElementById("social2").style.height = wdt1;
+	document.getElementById("social3").style.width = wdt1;
+        document.getElementById("social3").style.height = wdt1;
+	document.getElementById("social4").style.width = wdt1;
+        document.getElementById("social4").style.height = wdt1;
   }
   
 }

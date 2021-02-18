@@ -1,0 +1,26 @@
+.socialm {
+  opacity: 1;
+  z-index: -1; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  padding: 18px; 
+  width : 50px;
+  height : 50px; 
+}
+.socialm:hover {
+  opacity: 0.7;
+}
+.socialmfb {
+ background-image: url('SI_fb.png');
+}
+.socialmlinkedin {
+ background-image: url('SI_linkedin.png');
+}
+.socialminst {
+ background-image: url('SI_inst.png');
+}
+.socialmyt {
+ background-image: url('SI_yt.png');
+}
