@@ -119,7 +119,7 @@ function resizeSocialButtons(width)
 	document.getElementById("social5").style.fontSize = "13px";
 
   }
-  	var wdt2 =  (width * 0.07) + "px"
+  	var wdt2 =  (width * 0.03) + "px"
         document.getElementById("social1").style.width = wdt2;
         document.getElementById("social1").style.height = wdt2;
 	document.getElementById("social2").style.width = wdt2;
