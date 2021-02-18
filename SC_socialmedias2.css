@@ -5,9 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
-  padding: 18px; 
-  width : 50px;
-  height : 50px; 
+  padding: 40px;  
 }
 .socialm:hover {
   opacity: 0.7;

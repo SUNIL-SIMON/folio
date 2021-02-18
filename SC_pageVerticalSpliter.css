@@ -54,7 +54,7 @@ background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
 
 
 .footButton {
-  background-color: #000000;
+  background-color: transparent;
   float: right;
   border: none;
   outline: none;
