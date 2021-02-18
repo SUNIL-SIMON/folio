@@ -11,12 +11,6 @@
   cursor: pointer;
   height : 100px;
   float: left;
-  
-  background-image: url('SI_bike_op3.jpg');
-  z-index: -1; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .rightSideButton {
