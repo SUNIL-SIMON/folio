@@ -113,8 +113,6 @@ function resizeSocialButtons(width)
         document.getElementById("social2").style.height = wdt2;
         document.getElementById("social3").style.height = wdt2;
         document.getElementById("social4").style.height = wdt2;
-        document.getElementById("social5").style.height = wdt2;
-        document.getElementById("social6").style.height = wdt2;
 }
 function restoreOpacity(){
   document.getElementById("techi").style.opacity = 1;
