@@ -23,7 +23,7 @@
   transition: 0.3s;
 }
 .tab button:hover {
-  color: #cccccc;
+  color: #cdcdcd;
 }
 .tab button.active {
   color: #e65c00;

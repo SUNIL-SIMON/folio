@@ -14,23 +14,25 @@
 .dropup-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-image: linear-gradient(to right,#8e0e00,#1f1c18);
   min-width: 160px;
   bottom: 50px;
   Right : 50px;
   z-index: 1;
-  border-radius: 5%;
+  box-shadow: -5px -5px 8px 10px #888888;
 }
 
 .dropup-content a {
-  color: black;
+  color: #ffffff;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   
 }
 
-.dropup-content a:hover {background-color: #ccc}
+.dropup-content a:hover {
+color: #cdcdcd
+}
 
 .dropup:hover .dropup-content {
   display: block;
@@ -38,4 +40,5 @@
 
 .dropup:hover .dropbtn {
   background-color: transparent;
+  opacity : 0.3;
 }
