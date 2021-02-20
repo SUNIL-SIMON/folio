@@ -86,6 +86,10 @@ function resizeBottomCards(width)
   document.getElementById("vcard1").style.height = wdt;
   document.getElementById("vcard2").style.height = wdt;
   document.getElementById("vcard3").style.height = wdt;
+
+  document.getElementById("vcard4").style.height = wdt;
+  document.getElementById("vcard5").style.height = wdt;
+  document.getElementById("vcard6").style.height = wdt;
 }
 function resizeTabs(width)
 {
