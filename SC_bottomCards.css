@@ -69,4 +69,44 @@
   border-radius: 5%;
  
 }
+.bottomCardInnernonvideo1 {
+  background-image: url('SI_publication.png');
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+ 
+}
+.bottomCardInnernonvideo2 {
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+ 
+}
+
 

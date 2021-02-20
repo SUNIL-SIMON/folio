@@ -417,6 +417,11 @@ function openWorkLocation()
 {
   window.open("https://www.google.com/maps/place/Zoho+Corporation/@12.8312294,80.0471839,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5260db1ff54b03:0xa8af6b8bb6419d6f!8m2!3d12.8312242!4d80.0493726", "_blank"); 
 }
+function openPublication()
+{
+  window.open("https://www.researchgate.net/publication/301719120_Energy_Conservation_Using_Dynamic_Voltage_Frequency_Scaling_for_Computational_Cloud", "_blank"); 
+}
+
 function openWorkSite()
 {
   window.open("https://www.zoho.com", "_blank"); 
