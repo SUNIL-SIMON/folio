@@ -107,12 +107,27 @@ function resizeSocialButtons(width)
 {
 
  	var wdt2 =  ((width * 0.80) * 0.10) + "px"
-         var wdt3 =  (((width * 0.80) * 0.10) * 0.5) + "px"
         document.getElementById("socialmeds").style.height = wdt2;
         document.getElementById("social1").style.height = wdt2;
         document.getElementById("social2").style.height = wdt2;
         document.getElementById("social3").style.height = wdt2;
         document.getElementById("social4").style.height = wdt2;
+
+	var wdt3 =  ((width * 0.80) * 0.05) + "px"
+	document.getElementById("social5").style.height = wdt3;
+	document.getElementById("social6").style.height = wdt3;
+	document.getElementById("social7").style.height = wdt3;
+
+  if(width < 500){
+	document.getElementById("drop1").style.fontSize = "7px";
+  }
+  else if(width < 1000){
+	document.getElementById("drop1").style.fontSize = "10px";
+  }
+  else
+  {
+	document.getElementById("drop1").style.fontSize = "16px";
+  }
 }
 function restoreOpacity(){
   document.getElementById("techi").style.opacity = 1;
