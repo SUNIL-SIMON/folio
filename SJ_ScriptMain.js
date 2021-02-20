@@ -119,7 +119,7 @@ function resizeSocialButtons(width)
 	document.getElementById("social7").style.height = wdt3;
 
   if(width < 500){
-	document.getElementById("drop1").style.fontSize = "5px";
+	document.getElementById("drop1").style.fontSize = "4px";
   }
   else if(width < 1000){
 	document.getElementById("drop1").style.fontSize = "10px";
