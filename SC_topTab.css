@@ -26,7 +26,7 @@
   color: #cdcdcd;
 }
 .tab button.active {
-  color: #e65c00;
+  color: red;
 }
 .topright {
   float: right;

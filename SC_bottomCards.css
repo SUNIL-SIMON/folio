@@ -4,7 +4,7 @@
   border: none;
   color: #ffffff;
   font-size: 30px;
-  font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+  font-family: "Courier New";
   transition: all 0.5s;
   cursor: pointer;
   float : left
@@ -15,7 +15,7 @@
   border: none;
   color: #ffffff;
   font-size: 30px;
-  font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+  font-family: "Courier New";
   transition: all 0.5s;
   cursor: pointer;
   float : center
@@ -27,7 +27,7 @@
   border: none;
   color: #ffffff;
   font-size: 30px;
-  font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+  font-family: "Courier New";
   transition: all 0.5s;
   cursor: pointer;
   float : right
@@ -108,5 +108,18 @@
   border-radius: 5%;
  
 }
-
+.bottomcardtextl
+{
+  Text-align:center;
+padding-top: 20%;
+color: #FFFFFF;
+font-size: 40px;
+}
+.bottomcardtextr
+{
+  Text-align:center;
+padding-top: 20%;
+color: #ffffff;
+font-size: 40px;
+}
 

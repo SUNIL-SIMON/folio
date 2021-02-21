@@ -87,9 +87,13 @@ function resizeBottomCards(width)
   document.getElementById("vcard2").style.height = wdt;
   document.getElementById("vcard3").style.height = wdt;
 
-
+  document.getElementById("vcard4").style.height = wdt;
+  document.getElementById("vcard5").style.height = wdt;
   document.getElementById("vcard6").style.height = wdt;
+
   document.getElementById("vcard7").style.height = wdt;
+  document.getElementById("vcard8").style.height = wdt;
+  document.getElementById("vcard9").style.height = wdt;
 }
 function resizeTabs(width)
 {
@@ -146,7 +150,7 @@ function restoreOpacity(){
   document.getElementById("image").style.opacity = 0;
 }
 function restoreColors(){
- document.getElementById("about_content1").style.backgroundImage = "linear-gradient(to right, #1f1c18 40%,#8e0e00bf)";
+ document.getElementById("about_content1").style.backgroundImage = "linear-gradient(to right, #000000 40%,#000000cc)";
 }
 
 

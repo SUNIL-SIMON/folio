@@ -10,6 +10,8 @@
 .box .row.header {
         flex: 0 0 auto;
 background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
+border-top: 1px solid #ffffff;
+
 }
 .box .row.content1 {
         flex: 1 1 20px;
@@ -17,8 +19,7 @@ background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
 .content1sub
 {
       background-color: #0c0b0f;
-      border-style: solid;
-      border-color: coral;
+      border-top: 1px solid #ffffff;
       
 }
 .box .row.content2 {
@@ -26,20 +27,25 @@ background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
 }
 .content2sub
 {
-
+border-top: 1px solid #ffffff;
 
 }
 .content3sub
 {
-      background-image: linear-gradient(to right,#8e0e00b3,#000000 60%);
+      background-image: linear-gradient(to right bottom, #8e0e00bf , #000000 30%);
+	border-top: 1px solid #ffffff;
+
 }
 .content4sub
 {
-      background-image: linear-gradient(to right,#000000 30%,#8e0e00f5);
+      background-image: linear-gradient(to right top,#000000 55%,#8e0e00f5 );
+      border-top: 1px solid #ffffff;
+     border-bottom: 1px solid #ffffff;
 }
 .box .row.footer {
         flex: 0 1 auto;
         background-image: linear-gradient(to right,#8e0e00,#1f1c18);
+       
 }
 .footView {
   background-image: linear-gradient(to right,#1f1c18,#000000);
