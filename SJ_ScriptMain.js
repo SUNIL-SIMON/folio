@@ -43,6 +43,7 @@ function openTab(evt, tabName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
+  
 
   tablinks = document.getElementsByClassName("tab button");
   for (i = 0; i < tablinks.length; i++) {
@@ -94,6 +95,10 @@ function resizeBottomCards(width)
   document.getElementById("vcard7").style.height = wdt;
   document.getElementById("vcard8").style.height = wdt;
   document.getElementById("vcard9").style.height = wdt;
+  
+  var wdt2 =  (width * 0.04) + "px"
+  document.getElementById("floatingbtn4st2").style.fontSize = wdt2;
+  document.getElementById("floatingbtn4st1").style.fontSize = wdt2;
 }
 function resizeTabs(width)
 {
