@@ -10,7 +10,7 @@
 .box .row.header {
         flex: 0 0 auto;
 background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
-border-top: 1px solid #ffffff;
+border-top: 1px solid #8e0e00;
 
 }
 .box .row.content1 {
@@ -19,7 +19,7 @@ border-top: 1px solid #ffffff;
 .content1sub
 {
       background-color: #0c0b0f;
-      border-top: 1px solid #ffffff;
+      border-top: 1px solid #8e0e00;
       
 }
 .box .row.content2 {
@@ -27,20 +27,18 @@ border-top: 1px solid #ffffff;
 }
 .content2sub
 {
-border-top: 1px solid #ffffff;
 
 }
 .content3sub
 {
       background-image: linear-gradient(to right bottom, #8e0e00bf , #000000 30%);
-	border-top: 1px solid #ffffff;
+	border-top: 1px solid #8e0e00;
 
 }
 .content4sub
 {
       background-image: linear-gradient(to right top,#000000 55%,#8e0e00f5 );
-      border-top: 1px solid #ffffff;
-     border-bottom: 1px solid #ffffff;
+      border-top: 1px solid #8e0e00;
 }
 .box .row.footer {
         flex: 0 1 auto;
