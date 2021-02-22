@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="SC_background.css">
 <link rel="stylesheet" href="SC_dropdown.css">
 <link rel="stylesheet" href="SC_border.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <title>SUNIL SIMON</title>
 <style>
 body {
@@ -31,7 +32,7 @@ body {
 
 
 
-<div class="alert"><!-- ******************************************************************************************************* ALERT ROW open-->
+<div class="alertBanner"><!-- ******************************************************************************************************* ALERT ROW open-->
 
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong>Sorry!</strong> I am renovating my website, for now I am happy to welcome you, but please also visit later for a completed version.
 
@@ -41,7 +42,7 @@ body {
  <div class="row header">
 
   <div class="tab">
-   <button style="float: right" class="tab button" onclick="openTab1(event)" id="tab2"><b>Projects</b></button>
+   <button style="float: right" class="tab button" onclick="openTab1(event)" id="tab2"><b>Contact</b></button>
    <button style="float: right" class="tab button" onclick="openTab2(event)" id="defaultOpen"><b>Who is Simon</b></button>
    <!--
    <d id = "name" style="float: left" class="topName">SIMON</d>
@@ -157,8 +158,23 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 <!-- ************************************************************************************************************************** TAB1 closed-->
 <!-- *****************************************************************************************-->
 <!-- ************************************************************************************************************************** TAB2 open-->
-<div id = "toptab2" style="width:100%; height: auto; background-color: #cdcdcd;">
-Ffff<br>hjhjh<br>lklkl
+<div id = "toptab2" style="width:100%; height: auto; background-color: #000000;display: none;">
+
+<div class="btn-group-vertical">
+
+
+<div2 id = "social1"  class = "socialm socialmlinkedin" onclick="openLinkedin()" style="width:100px;height:100px;"></div2>
+
+<div2 id = "social2"  class = "socialm socialmfb" onclick="openFacebook()" style="width:100px;height:100px;"></div2>
+
+<div2 id = "social3"  class = "socialm socialminst" onclick="openInstagram()" style="width:100px;height:100px;"></div2>
+
+<div2 id = "social4"  class = "socialm socialmyt" onclick="openYoutube()" style="width:100px;height:100px;"></div2>
+
+
+</div>
+
+
 </div>
 <!-- ************************************************************************************************************************** TAB2 closed-->
 

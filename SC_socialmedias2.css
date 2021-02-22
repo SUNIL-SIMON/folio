@@ -3,9 +3,9 @@
   opacity: 1;
   background-position: center;
   background-size: cover;
-  display: inline-block;
-  margin : 0px 0px;
- padding:0px;
+  display: block;
+  margin : 30px 190%;
+ padding: 10px 10px;
 position: relative;
  text-align:center;
 
