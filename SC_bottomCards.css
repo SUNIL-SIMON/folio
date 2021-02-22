@@ -130,7 +130,71 @@ font-size: 40px;
   border-top-left-radius: 25px;
   
 }
-.skillheadtext {
+.skillimagecontainer { 
+  background-image: url('SI_lang1.png');
+    display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  text-align: center;
+  float: center;
+  height: 100px;
+  position: relative;
+  top: 20px;
+}
+
+.leftSideskillButton {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
   text-align: left;
-color : #ffffff;
+  font-size: 30px;
+  font-family: "Courier New";
+  transition: all 0.5s;
+  cursor: pointer;
+  height : 100px;
+  float: left;
+  white-space: nowrap;
+}
+.leftSideskillButton5 {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Courier New";
+  transition: all 0.5s;
+  cursor: pointer;
+  height : 100px;
+  float: left;
+  white-space: nowrap;
+}
+.skillimagecontainer5 { 
+    display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  text-align: center;
+  float: center;
+  height: 100px;
+  position: relative;
+  top: 20px;
+}
+.rightSideskillButton5 {
+  top: 20px;
+  display: inline-block;
+  border: none;
+  color: #000000;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Courier New";
+  transition: all 0.5s;
+  cursor: pointer;
+  height : 100px;
+  float: center;
+  white-space: nowrap;
+  border-radius: 10px;
+  background-image: linear-gradient(#70e1f5,#ffd194);
 }
