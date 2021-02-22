@@ -107,6 +107,10 @@ function resizeFUN_TECH_views(width) {
   var wdt =  (width * 0.023) + "px";
   document.getElementById("fun").style.fontSize = wdt;
   document.getElementById("techi").style.fontSize = wdt;
+  var wdt2 =  (width * 0.018) + "px";
+  document.getElementById("skill5t1").style.fontSize = wdt2;
+  document.getElementById("skill5t2").style.fontSize = wdt2;
+  document.getElementById("skill5t3").style.fontSize = wdt2;
 }
 function resizeBottomCards(width)
 {
