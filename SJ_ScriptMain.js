@@ -26,6 +26,7 @@ function resizedWindow() {
   var w = window.outerWidth;
   var h = window.outerHeight;
 
+  resizeFUN_TECH_views(w);
   resizeBottomCards(w);
   resizeTabs(w);
 
@@ -86,9 +87,11 @@ function resizeTabs(width)
 	document.getElementById("tab2").style.fontSize = "20px";
   }
 }
-
-
-
+function resizeFUN_TECH_views(width) {
+  var wdt =  (width * 0.023) + "px";
+  document.getElementById("fun").style.fontSize = wdt;
+  document.getElementById("techi").style.fontSize = wdt;
+}
 function resizeBottomCards(width)
 {
   var wdt =  (width * 0.34) + "px";
