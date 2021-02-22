@@ -122,4 +122,12 @@ padding-top: 20%;
 color: #ffffff;
 font-size: 40px;
 }
-
+.skilltext {
+  
+  text-align: left;
+  color : #ffffff;
+}
+.skillheadtext {
+  text-align: left;
+color : #ffffff;
+}

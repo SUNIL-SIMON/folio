@@ -38,6 +38,11 @@ border-top: 1px solid #8e0e00;
       background-image: linear-gradient(to right top,#000000 55%,#8e0e00f5 );
       border-top: 1px solid #8e0e00;
 }
+.content4sub
+{
+      background-image: linear-gradient(to right bottom, #000000 , #000000de 15%);
+      border-top: 1px solid #8e0e00;
+}
 .box .row.footer {
         flex: 0 1 auto;
         background-image: linear-gradient(to right,#8e0e00,#1f1c18);

@@ -44,6 +44,7 @@ function openTab2(evt) {
     document.getElementById("content2_1").style.display = "block";
     document.getElementById("content2_2").style.display = "block";
     document.getElementById("content3").style.display = "block";
+    document.getElementById("content4").style.display = "block";
     document.getElementById("toptab2").style.display = "none";
     document.getElementById("toptab1").style.display = "block";
     openTab(evt);
@@ -54,6 +55,7 @@ function openTab1(evt) {
     document.getElementById("content2_1").style.display = "none";
     document.getElementById("content2_2").style.display = "none";
     document.getElementById("content3").style.display = "none";
+    document.getElementById("content4").style.display = "none";
     document.getElementById("toptab2").style.display = "block";
     document.getElementById("toptab1").style.display = "none";
     openTab(evt);
@@ -111,6 +113,10 @@ function resizeBottomCards(width)
 
   var wdt3 =  (width * 0.03) + "px"
   document.getElementById("social6").style.fontSize = wdt3;
+  document.getElementById("skilld").style.fontSize = wdt3;
+
+  var wdt4 =  (width * 0.018) + "px"
+  document.getElementById("skill").style.fontSize = wdt4;
 }
 
 function  openLinkedin()
@@ -127,7 +133,7 @@ function openInstagram()
 }
 function openGit()
 {
- window.open("https://www.instagram.com/sunil_simon8471/", "_blank"); 
+ window.open("https://github.com/SUNIL-SIMON", "_blank"); 
 }
 function openYoutube()
 {
