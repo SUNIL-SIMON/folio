@@ -108,6 +108,9 @@ function resizeBottomCards(width)
   var wdt2 =  (width * 0.04) + "px"
   document.getElementById("floatingbtn4st2").style.fontSize = wdt2;
   document.getElementById("floatingbtn4st1").style.fontSize = wdt2;
+
+  var wdt3 =  (width * 0.03) + "px"
+  document.getElementById("social6").style.fontSize = wdt3;
 }
 
 function  openLinkedin()
@@ -119,6 +122,10 @@ function openFacebook()
  window.open("https://www.facebook.com/sunil.s.balraj", "_blank"); 
 }
 function openInstagram()
+{
+ window.open("https://www.instagram.com/sunil_simon8471/", "_blank"); 
+}
+function openGit()
 {
  window.open("https://www.instagram.com/sunil_simon8471/", "_blank"); 
 }

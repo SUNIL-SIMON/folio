@@ -4,7 +4,20 @@
   background-position: center;
   background-size: cover;
   display: block;
-  margin : 30px 10%;
+  margin : 30px 30%;
+ padding: 10px 10px;
+position: relative;
+ text-align:center;
+
+
+}
+.socialm {
+  Background-color : transparent;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin : 30px 30%;
  padding: 10px 10px;
 position: relative;
  text-align:center;
@@ -27,6 +40,9 @@ position: relative;
 }
 .socialmyt {
  background-image: url('SI_yt.png');
+}
+.socialmgit {
+ background-image: url('SI_git2.png');
 }
 .socialmeds {
    display: inline-block;
@@ -100,6 +116,10 @@ vertical-align: middle;
 }
 .worksite {
   background-image: url('SI_domain.png');
+}
+.contacttext {
+  text-align: center;
+color : #ffffff;
 }
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
