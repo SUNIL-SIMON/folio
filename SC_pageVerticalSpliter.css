@@ -16,25 +16,24 @@ border-top: 1px solid #8e0e00;
 .box .row.content1 {
         flex: 1 1 20px;
 }
-.content1sub
-{
-      background-color: #0c0b0f;
-      
-}
 .box .row.content2 {
         flex: 1 1 auto;
 }
-.content2sub
+.content1sub
 {
+         background-image: linear-gradient(to right, #000000 15%, #000000d4);
+}
+.content2sub1
+{
+    background-image: linear-gradient(to right bottom, #8e0e00bf , #000000 45%);
+   border-top: 1px solid #8e0e00;
 
+}
+.content2sub2
+{
+     background-image: linear-gradient(to right top,#000000 55%,#000000 );
 }
 .content3sub
-{
-      background-image: linear-gradient(to right bottom, #8e0e00bf , #000000 30%);
-	border-top: 1px solid #8e0e00;
-
-}
-.content4sub
 {
       background-image: linear-gradient(to right top,#000000 55%,#8e0e00f5 );
       border-top: 1px solid #8e0e00;

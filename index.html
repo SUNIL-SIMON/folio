@@ -26,77 +26,47 @@ body {
 </head>
 <body onresize="resizedWindow()" >
 
-<div class="backing">
-<div class="backing2">
+<div class="backing"><!-- ************************************************************************************************************* BG IMAGE1 open-->
+<div class="backing2"><!-- ***************************************************************************************************** BG IMAGE2 open-->
 
 
-<!-- ***************************************** ALERT ROW-->
-<div class="alert">
+
+<div class="alert"><!-- ******************************************************************************************************* ALERT ROW open-->
+
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span><strong>Sorry!</strong> I am renovating my website, for now I am happy to welcome you, but please also visit later for a completed version.
-</div>
-<!-- ***************************************** ALL TABS ROW -->
-<div class="box">
+
+</div><!-- ************************************************************************************************************************ ALERT ROW closed-->
+<!-- *****************************************************************************************-->
+<div class="box"><!-- ************************************************************************************************************** TOP TABS BAND open-->
  <div class="row header">
 
   <div class="tab">
-   <button style="float: right" class="tab button" onclick="openTab(event, 'contact')"id="tab2">Projects</button>
-   <button style="float: right" class="tab button" onclick="openTab(event, 'aboutC1')" id="defaultOpen">Who is Simon</button>
+   <button style="float: right" class="tab button" onclick="openTab1(event)" id="tab2"><b>Projects</b></button>
+   <button style="float: right" class="tab button" onclick="openTab2(event)" id="defaultOpen"><b>Who is Simon</b></button>
    <!--
    <d id = "name" style="float: left" class="topName">SIMON</d>
    -->
   </div>
 
  </div>
-</div>
+</div><!-- ************************************************************************************************************************** TOP TABS BAND close-->
+<!-- *****************************************************************************************-->
+<!-- ************************************************************************************************************************** TAB1 open-->
+<div id = "toptab1" style="width:100%; height: auto; background-color: transparent;">
 
-<!-- ***************************************** ABOUT CONTENT 1 -->
-<div id = "about_content1" class="row content1 content2sub">
+<!-- ************************************************************************************************************************** content1 open-->
+<div id = "content1" class="row content1 content1sub">
 
 <div class="backing3">
 
-<div id="aboutC1" class="tabcontent">
-  <span onclick="this.parentElement.style.display='block'" class="btn-group" style="width:100%">
+<div id="aboutC1"  style = "width:100%;">
 
-  <button1 id="fun"  style="width:33.333%" class="leftSideButton">
+<button1 id="fun"  style="width:33.333%" class="leftSideButton">
 <span>
 <br><b><font color="red">FUN ME</font></b><br><br>- Mountain Biker<br><br>- Guitarist<br><br>- Scuba
 </span></button1>
 
-
 <div id="imagecontainer" class="imagecontainer2" style="width:33.333%">
-
-<div id="floatingbtn1" class="floatingImageButton floatingImageButton1sub" >
-<img id = "img1" class="simagecards2">
-</img>
-</div>
-
-<div id="floatingbtn2" class="floatingImageButton floatingImageButton2sub">
-<img id = "img2" class="simagecards2 simagecardssub" src="tr3.PNG">
-</img>
-</div>
-
-<div id="floatingbtn3" class="floatingImageButton floatingImageButton3sub">
-
-</div>
-
-<div id="floatingbtn4" class="floatingImageButton floatingImageButton4sub">
-<img id = "img4" class="simagecards2 simagecardssub" src="tr2.PNG">
-</img>
-</div>
-
-<div id="floatingbtn5" class="floatingImageButton floatingImageButton5sub">
-
-</div>
-
-<button id = "image" type="button" class= "imageButton">
-
-</button>
-
-<div id="floatingbtn6" class="floatingImageButton2 floatingImageButton6">
-<img id = "img6" class="simagecards2" src="t1.jpg">
-</img>
-</div>
-
 </div>
 
 <button3 id="techi"  style="width:33.333%" class="rightSideButton">
@@ -104,13 +74,16 @@ body {
 <br><b><font color="red">TECHIE ME</font></b><br><br>- iOS developer<br><br>- Web Developer<br><br>- Robotics<br><br>- IOT</span></button3>
 </div>
 
+
 </div>
 
 </div>
-<!-- ***************************************** ABOUT CONTENT 2 -->
-<div id="aboutC2" class="row content2 content3sub">
-       
-<div class="btn-group" style="width:100%">
+
+</div>
+<!-- ************************************************************************************************************************** content1 closed-->
+
+<!-- ************************************************************************************************************************** content2 open-->    
+<div id = "content2_1" style="width:100%; height: auto;" class = "row content2 content2sub1">
 
 <div id = "vcard2" class = "bottomCardBasec" style="width:33.33%">
 </div>
@@ -128,10 +101,9 @@ src="https://www.youtube.com/embed/ZopKOZMsebY">
 </div>
 </div>
 
-
 </div>
-<!-- ***************************** -->
-<div id="aboutC3" class="btn-group" style="width:100%">
+<!-- ****************-->
+<div id = "content2_2" style="width:100%; height: auto;" class = "row content2 content2sub2">
 
 <div id = "vcard4" class = "bottomCardBasel" style="width:33.33%">
 <div id="floatingbtn4s" class="bottomCard">
@@ -159,15 +131,9 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 </div>
 
 </div>
-
-
-</div>
-
-</div>
-<!-- *****************************************Content 3 -->
-<div id="aboutC4" class="row content2 content4sub">
-
-<div class="btn-group" style="width:100%">
+<!-- ************************************************************************************************************************** content2 closed-->
+<!-- ************************************************************************************************************************** content3 open-->
+<div id = "content3" style="width:100%; height: auto;" class = "row content2 content3sub">
 
 <div id = "vcard7" class = "bottomCardBasel" style="width:33%">
 <div id="floatingbtn4s" class="bottomCard" >
@@ -184,55 +150,20 @@ src="https://www.youtube.com/embed/SGI21Pp9edg">
 </div>
 </div>
 
+</div>
+<!-- ************************************************************************************************************************** content3 closed-->
 
 </div>
-
+<!-- ************************************************************************************************************************** TAB1 closed-->
+<!-- *****************************************************************************************-->
+<!-- ************************************************************************************************************************** TAB2 open-->
+<div id = "toptab2" style="width:100%; height: auto; background-color: #cdcdcd;">
+Ffff<br>hjhjh<br>lklkl
 </div>
-<!-- *****************************************ABOUT FOOTER -->
-<div class="row footer footView">
+<!-- ************************************************************************************************************************** TAB2 closed-->
 
-
-<div id = "socialmeds" float = "right" class="socialmeds btn-group" style="width:80%">
-
-<div2 id = "social1"  class = "socialm socialmlinkedin" onclick="openLinkedin()" style="width:10%">
-&nbsp;<br>&nbsp;</div2>
-<div2 id = "social5"  class = "socialm" style="width:5%">
-&nbsp;<br>&nbsp;</div2>
-<div2 id = "social2"  class = "socialm socialmfb" onclick="openFacebook()" style="width:10%">
-&nbsp;<br>&nbsp;</div2>
-<div2 id = "social6"  class = "socialm" style="width:5%">
-&nbsp;<br>&nbsp;</div2>
-<div2 id = "social3"  class = "socialm socialminst" onclick="openInstagram()" style="width:10%">
-&nbsp;<br>&nbsp;</div2>
-<div2 id = "social7"  class = "socialm" style="width:5%">
-&nbsp;<br>&nbsp;</div2>
-<div2 id = "social4"  class = "socialm socialmyt" onclick="openYoutube()" style="width:10%">
-&nbsp;<br>&nbsp;</div2>
-
-<div class="work websitetext2 websitetext4sub dropup" style="width:30%">
-  <button id = "drop1" class="dropbtn">SUNIL SIMON C B<br>MTS, ZOHO CORP.</button>
-  <div class="dropup-content">
-    <a onclick="openWorkLocation()">&#128204; Work location</a>
-    <a onclick="openWorkSite()">&#128240; Company website</a>
-  </div>
-</div>
-
-
-</div>
-
-
-</div>
-<!-- *****************************************CONTACT TAB -->
-
-<div id="contact" class="tabcontent"> 
-  <span onclick="this.parentElement.style.display='block'" style = "color : ffffff"</span>
-</div>
-
-
-
-</div>
-<!-- ***************************************** -->
-</div>
+</div><!-- ***************************************** BG IMAGE1 closed-->
+</div><!-- ***************************************** BG IMAGE2 closed-->
 <!-- ***************************************** -->
 <script src="SJ_ScriptMain.js">
 </script>
