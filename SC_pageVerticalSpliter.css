@@ -33,7 +33,7 @@
 }
 .content4sub
 {
-      background-image: linear-gradient(to right bottom, #000000 , #000000de 15%);
+      background-image: linear-gradient(to right, #8e0e00de, #000000de  );
       border-top: 1px solid #8e0e00;
 }
 .footer {
