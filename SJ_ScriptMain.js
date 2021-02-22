@@ -157,6 +157,10 @@ function openGit()
 function openYoutube()
 {
 }
+function openmail()
+{
+ window.location.href = "mailto:sunil847148@gmail.com";
+}
 function openWorkLocation()
 {
   window.open("https://www.google.com/maps/place/Zoho+Corporation/@12.8312294,80.0471839,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5260db1ff54b03:0xa8af6b8bb6419d6f!8m2!3d12.8312242!4d80.0493726", "_blank"); 

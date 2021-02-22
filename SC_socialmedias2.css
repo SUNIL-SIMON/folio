@@ -11,19 +11,7 @@ position: relative;
 
 
 }
-.socialm {
-  Background-color : transparent;
-  opacity: 1;
-  background-position: center;
-  background-size: cover;
-  display: block;
-  margin : 30px 30%;
- padding: 10px 10px;
-position: relative;
- text-align:center;
 
-
-}
 .socialm:hover {
   opacity: 0.7;
   animation-iteration-count: infinite; 
@@ -44,16 +32,20 @@ position: relative;
 .socialmgit {
  background-image: url('SI_git2.png');
 }
+.socialmmail {
+ background-image: url('SI_mail1.png');
+}
+
 .socialmeds {
    display: inline-block;
 }
+
 .work {
   Background-color : transparent;
   opacity: 1;
   display: inline-block;
-  margin : 0px 0px;
  padding : 0px;
-
+ margin : 30px 125%;
 }
 .workwebsite {
   Background-color : transparent;

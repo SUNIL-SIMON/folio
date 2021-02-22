@@ -1,7 +1,37 @@
+.workTitle {
+  Background-color : transparent;
+ Color : #ffffff;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  display: block;
+Padding: 0px 100px;
+position: relative;
+ Text-align:left;
+font-size: 28px;
+}
+.socialmwork {
+  Background-color : transparent;
+ Color : #ffffff;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin : 30px 30%;
+ padding: 0px 10px;
+position: relative;
+ text-align:center;
+}
+.socialmworksub {
+ background-image: url('SI_work.png');
+}
+.socialmwork:hover {
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
+}
 .dropbtn {
-  background-color: transparent;
-  color: white;
-  padding: 16px;
+  background-image: url('SI_work.png');
+  Background-color : transparent;
   font-size: 18px;
   border: none;
   background-position: center;
@@ -19,10 +49,9 @@
   display: none;
   position: absolute;
   min-width: 160px;
-  bottom: 50px;
-  Right : 50px;
+  bottom: 75px;
+  Left : 38px;
   z-index: 1;
-  box-shadow: -5px -5px 5px 5px #aaaaaa7d;
 }
 
 .dropup-content a {
@@ -34,7 +63,6 @@
 }
 
 .dropup-content a:hover {
-color: #e65c00
 }
 
 .dropup:hover .dropup-content {
@@ -43,5 +71,5 @@ color: #e65c00
 
 .dropup:hover .dropbtn {
   background-color: transparent;
-  opacity : 10.3;
+  opacity : 0.3;
 }
