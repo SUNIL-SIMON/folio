@@ -2,26 +2,19 @@
         display: flex;
         flex-flow: column;
         height: 100%;
-}
-.box .row {
- 
-
-}
-.box .row.header {
         flex: 0 0 auto;
-background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
-border-top: 1px solid #8e0e00;
-
+	background-image: linear-gradient(to right,#8e0e00b3,#1f1c18 60%);
+	border-top: 1px solid #8e0e00;
 }
-.box .row.content1 {
-        flex: 1 1 20px;
-}
-.box .row.content2 {
-        flex: 1 1 auto;
+.content1 {
+       
 }
 .content1sub
 {
          background-image: linear-gradient(to right, #000000 15%, #000000d4);
+}
+.content2 {
+        flex: 1 1 auto;
 }
 .content2sub1
 {
@@ -43,7 +36,7 @@ border-top: 1px solid #8e0e00;
       background-image: linear-gradient(to right bottom, #000000 , #000000de 15%);
       border-top: 1px solid #8e0e00;
 }
-.box .row.footer {
+.footer {
         flex: 0 1 auto;
         background-image: linear-gradient(to right,#8e0e00,#1f1c18);
        

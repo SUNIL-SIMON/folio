@@ -26,14 +26,16 @@ function resizedWindow() {
   var w = window.outerWidth;
   var h = window.outerHeight;
 
-  resizeFUN_TECH_views(w);
   resizeBottomCards(w);
   resizeTabs(w);
 
-  var wdt7 = ((w * 0.14) * 3) + "px";
-  var wdt8 = ((w * 0.14) * 2.3) + "px";
+  var wdt7 =  (w * 0.35) + "px";
   document.getElementById("content1").style.height = wdt7;
   document.getElementById("aboutC1").style.height = wdt7;
+  document.getElementById("fun").style.height = wdt7;
+  document.getElementById("techi").style.height = wdt7;
+  document.getElementById("imagecontainer").style.height = wdt7;
+
 
  
   
@@ -68,11 +70,6 @@ function openTab(evt) {
   }
   evt.currentTarget.className += " active";
 }
-function resizeFUN_TECH_views(width) {
-  var wdt =  (width * 0.023) + "px";
-  document.getElementById("fun").style.fontSize = wdt;
-  document.getElementById("techi").style.fontSize = wdt;
-}
 function resizeTabs(width)
 {
   if(width < 500){
@@ -94,7 +91,7 @@ function resizeTabs(width)
 
 function resizeBottomCards(width)
 {
-  var wdt =  (width * 0.34) + "px"
+  var wdt =  (width * 0.34) + "px";
   document.getElementById("vcard1").style.height = wdt;
   document.getElementById("vcard2").style.height = wdt;
   document.getElementById("vcard3").style.height = wdt;
@@ -107,16 +104,16 @@ function resizeBottomCards(width)
   document.getElementById("vcard8").style.height = wdt;
   document.getElementById("vcard9").style.height = wdt;
   
-  var wdt2 =  (width * 0.04) + "px"
+  var wdt2 =  (width * 0.03) + "px";
   document.getElementById("floatingbtn4st2").style.fontSize = wdt2;
   document.getElementById("floatingbtn4st1").style.fontSize = wdt2;
 
-  var wdt3 =  (width * 0.03) + "px"
-  document.getElementById("social6").style.fontSize = wdt3;
-  document.getElementById("skilld").style.fontSize = wdt3;
-
-  var wdt4 =  (width * 0.018) + "px"
+  var wdt4 =  (width * 0.018) + "px";
   document.getElementById("skill").style.fontSize = wdt4;
+
+  var wdt3 =  (width * 0.028) + "px";
+  document.getElementById("skilld").style.fontSize = wdt3;
+  document.getElementById("social6").style.fontSize = wdt3;
 }
 
 function  openLinkedin()
