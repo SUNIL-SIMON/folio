@@ -28,7 +28,7 @@ function resizedWindow() {
   resizeFUN_TECH_views(w);
   resizeBottomCards(w);
   resizeTabs(w);
-
+  resizeSocialMedia(w);
   var wdt7 =  (w * 0.35) + "px";
   document.getElementById("content1").style.height = wdt7;
   document.getElementById("aboutC1").style.height = wdt7;
@@ -134,7 +134,26 @@ function resizeBottomCards(width)
   var wdt3 =  (width * 0.028) + "px";
   document.getElementById("social6").style.fontSize = wdt3;
 }
-
+function resizeSocialMedia(width)
+{
+  var wdt3 =  (width * 0.1) + "px";
+  document.getElementById("social7").style.width = wdt3;
+  document.getElementById("social7").style.height = wdt3;
+  document.getElementById("social1").style.width = wdt3;
+  document.getElementById("social1").style.height = wdt3;
+  document.getElementById("social2").style.width = wdt3;
+  document.getElementById("social2").style.height = wdt3;
+  document.getElementById("social3").style.width = wdt3;
+  document.getElementById("social3").style.height = wdt3;
+  document.getElementById("social4").style.width = wdt3;
+  document.getElementById("social4").style.height = wdt3;
+  document.getElementById("social5").style.width = wdt3;
+  document.getElementById("social5").style.height = wdt3;
+  document.getElementById("social8").style.width = wdt3;
+  document.getElementById("social8").style.height = wdt3;
+  document.getElementById("drop1").style.width = wdt3;
+  document.getElementById("drop1").style.height = wdt3;
+}
 function  openLinkedin()
 {
   window.open("https://www.linkedin.com/in/sunil-simon-9146391b9/", "_blank"); 

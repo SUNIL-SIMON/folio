@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   display: block;
-Padding: 0px 100px;
+Padding: 0px 0px;
 position: relative;
  Text-align:left;
 font-size: 28px;
@@ -17,8 +17,8 @@ font-size: 28px;
   background-position: center;
   background-size: cover;
   display: block;
-  margin : 30px 30%;
- padding: 0px 10px;
+  margin : 10% 30%;
+ padding: 0px 0px;
 position: relative;
  text-align:center;
 }
@@ -49,8 +49,8 @@ position: relative;
   display: none;
   position: absolute;
   min-width: 160px;
-  bottom: 75px;
-  Left : 38px;
+  bottom: 75%;
+  Left : 25%;
   z-index: 1;
 }
 
