@@ -17,10 +17,13 @@ font-size: 28px;
   background-position: center;
   background-size: cover;
   display: block;
-  margin : 10% 30%;
+  margin : 3% 30%;
  padding: 0px 0px;
 position: relative;
  text-align:center;
+}
+.socialmworksmall {
+  margin : 5% 35%;
 }
 .socialmworksub {
  background-image: url('SI_work.png');

@@ -48,7 +48,8 @@ function resizedWindow() {
   document.getElementById("imagecontainer1").style.height = wdt9;
   document.getElementById("imagecontainer1").style.width = wdt10;
  
-  
+  var wdt11 =  (w * 0.5) + "px";
+  document.getElementById("social6").style.height = wdt11;
 }
 function openTab2(evt) {
 
@@ -137,8 +138,9 @@ function resizeBottomCards(width)
 function resizeSocialMedia(width)
 {
   var wdt3 =  (width * 0.1) + "px";
-  document.getElementById("social7").style.width = wdt3;
-  document.getElementById("social7").style.height = wdt3;
+  var wdt4 =  (width * 0.08) + "px";
+  document.getElementById("social7").style.width = wdt4;
+  document.getElementById("social7").style.height = wdt4;
   document.getElementById("social1").style.width = wdt3;
   document.getElementById("social1").style.height = wdt3;
   document.getElementById("social2").style.width = wdt3;
@@ -149,10 +151,10 @@ function resizeSocialMedia(width)
   document.getElementById("social4").style.height = wdt3;
   document.getElementById("social5").style.width = wdt3;
   document.getElementById("social5").style.height = wdt3;
-  document.getElementById("social8").style.width = wdt3;
-  document.getElementById("social8").style.height = wdt3;
-  document.getElementById("drop1").style.width = wdt3;
-  document.getElementById("drop1").style.height = wdt3;
+  document.getElementById("social8").style.width = wdt4;
+  document.getElementById("social8").style.height = wdt4;
+  document.getElementById("drop1").style.width = wdt4;
+  document.getElementById("drop1").style.height = wdt4;
 }
 function  openLinkedin()
 {
@@ -172,6 +174,7 @@ function openGit()
 }
 function openYoutube()
 {
+   window.open("https://www.youtube.com/channel/UCyW7iIz8c0Z655hCCdxVsMw", "_blank");
 }
 function openmail()
 {
