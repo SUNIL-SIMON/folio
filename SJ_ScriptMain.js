@@ -16,7 +16,6 @@ var manual = 1;
 var srcArrayT1 =["SI_tr2.jpg","SI_tr1.jpg","SI_tr3.jpg","SI_trr4.jpg","SI_tr5.jpg"];
 var srcArrayT2 =["SI_ta1.jpg","SI_ta2.jpg","SI_ta3.jpg","SI_ta4.jpg","SI_ta5.jpg"];
 var srcArrayT3 =["SI_td1.jpg","SI_td2.jpg","SI_td1.jpg","SI_td2.jpg","SI_td1.jpg"];
-
 document.getElementById("defaultOpen").click();
 
 resizedWindow();
@@ -42,11 +41,7 @@ function resizedWindow() {
     document.getElementById("skilll").style.height = wdt8;
   document.getElementById("skill").style.height = wdt8;
 
-var wdt11 =  (w * 0.20) + "px";
-var wdt12 =  ((w * 0.20) - 40) + "px";
-  document.getElementById("skillContent5").style.height = wdt11;
-    document.getElementById("skilll5").style.height = wdt11;
-  document.getElementById("skill5").style.height = wdt12;
+
 
   var wdt9 =  (w * 0.1) + "px";
   var wdt10 =  (w * 0.4) + "px";
@@ -111,6 +106,8 @@ function resizeFUN_TECH_views(width) {
   document.getElementById("skill5t1").style.fontSize = wdt2;
   document.getElementById("skill5t2").style.fontSize = wdt2;
   document.getElementById("skill5t3").style.fontSize = wdt2;
+
+
 }
 function resizeBottomCards(width)
 {
