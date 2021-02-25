@@ -16,12 +16,14 @@ var manual = 1;
 var srcArrayT1 =["SI_tr2.jpg","SI_tr1.jpg","SI_tr3.jpg","SI_trr4.jpg","SI_tr5.jpg"];
 var srcArrayT2 =["SI_ta1.jpg","SI_ta2.jpg","SI_ta3.jpg","SI_ta4.jpg","SI_ta5.jpg"];
 var srcArrayT3 =["SI_td1.jpg","SI_td2.jpg","SI_td1.jpg","SI_td2.jpg","SI_td1.jpg"];
-document.getElementById("defaultOpen").click();
 
+var load = 0;
+
+document.getElementById("defaultOpen").click();
 resizedWindow();
 
-function resizedWindow() {
 
+function resizedWindow(){
   var w = window.outerWidth;
   var h = window.outerHeight;
 
@@ -47,9 +49,7 @@ function resizedWindow() {
   var wdt10 =  (w * 0.4) + "px";
   document.getElementById("imagecontainer1").style.height = wdt9;
   document.getElementById("imagecontainer1").style.width = wdt10;
- 
-  var wdt11 =  (w * 0.5) + "px";
-  document.getElementById("social6").style.height = wdt11;
+
 }
 function openTab2(evt) {
 
@@ -134,6 +134,19 @@ function resizeBottomCards(width)
 
   var wdt3 =  (width * 0.028) + "px";
   document.getElementById("social6").style.fontSize = wdt3;
+
+  var wdt5 =  ((width * 0.33) * 0.1) + "px";
+  document.getElementById("floatingbtn4s1").style.top = wdt5;
+  document.getElementById("floatingbtn4s1").style.left = wdt5;
+  document.getElementById("floatingbtn4s2").style.top = wdt5;
+  document.getElementById("floatingbtn4s2").style.left = wdt5;
+  document.getElementById("floatingbtn4s3").style.top = wdt5;
+  document.getElementById("floatingbtn4s3").style.left = wdt5;
+  document.getElementById("floatingbtn4s4").style.top = wdt5;
+  document.getElementById("floatingbtn4s4").style.left = wdt5;  
+  document.getElementById("floatingbtn4s5").style.top = wdt5;
+  document.getElementById("floatingbtn4s5").style.left = wdt5;  
+
 }
 function resizeSocialMedia(width)
 {
