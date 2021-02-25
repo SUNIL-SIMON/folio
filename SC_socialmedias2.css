@@ -7,7 +7,7 @@
   margin : 30px 30%;
  padding: 10px 10px;
 position: relative;
- text-align:center;
+ Text-align:right;
 
 
 }
@@ -111,18 +111,18 @@ vertical-align: middle;
 }
 .contacttext {
   text-align: center;
-color : #ffffff;
-display: inline-block;
+  color : #ffffff;
+  display: inline-block;
   background-color: transparent;
   border: none;
   color: #ffffff;
-  text-align: left;
   font-size: 30px;
   font-family: "Courier New";
   cursor: pointer;
-  height : 100px;
   float: right;
-  Padding : 100px;
+  padding-top : 100px;
+  Padding-left : 5%;
+  Padding-right : 5%;
 }
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
