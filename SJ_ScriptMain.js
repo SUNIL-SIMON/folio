@@ -113,19 +113,19 @@ function resizeTabs(width)
 {
   if(width < 500){
 	document.getElementById("defaultOpen").style.fontSize = "13px";
-	document.getElementById("tab2").style.fontSize = "13px";
-	document.getElementById("tab3").style.fontSize = "13px";
+	document.getElementById("contact").style.fontSize = "13px";
+	document.getElementById("adaptability").style.fontSize = "13px";
   }
   else if(width < 1000){
 	document.getElementById("defaultOpen").style.fontSize = "15px";
-	document.getElementById("tab2").style.fontSize = "15px";
-	document.getElementById("tab3").style.fontSize = "15px";
+	document.getElementById("contact").style.fontSize = "15px";
+	document.getElementById("adaptability").style.fontSize = "15px";
   }
   else
   {
 	document.getElementById("defaultOpen").style.fontSize = "20px";
-	document.getElementById("tab2").style.fontSize = "20px";
-	document.getElementById("tab3").style.fontSize = "20px";
+	document.getElementById("contact").style.fontSize = "20px";
+	document.getElementById("adaptability").style.fontSize = "20px";
   }
 }
 function resizeFUN_TECH_views(width) {
