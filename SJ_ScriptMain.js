@@ -51,30 +51,56 @@ function resizedWindow(){
   document.getElementById("imagecontainer1").style.width = wdt10;
 
 }
+function openTab3(evt) {
+
+     document.getElementById("content1").style.display = "block";
+    		document.getElementById("content2_1").style.display = "block";
+    		document.getElementById("content2_2").style.display = "block";
+    		document.getElementById("content3").style.display = "block";
+    		document.getElementById("content4").style.display = "none";
+    		document.getElementById("content5").style.display = "none";
+    		document.getElementById("toptab1").style.display = "block";
+		document.getElementById("toptab2").style.display = "none";
+ 		document.getElementById("toptab3").style.display = "none";
+    		openTab(evt);
+
+}
 function openTab2(evt) {
 
-    document.getElementById("content1").style.display = "block";
-    document.getElementById("content2_1").style.display = "block";
-    document.getElementById("content2_2").style.display = "block";
-    document.getElementById("content3").style.display = "block";
-    document.getElementById("content4").style.display = "block";
-    document.getElementById("content5").style.display = "block";
-    document.getElementById("toptab2").style.display = "none";
-    document.getElementById("toptab1").style.display = "block";
-    openTab(evt);
+        document.getElementById("content1").style.display = "block";
+    		document.getElementById("content2_1").style.display = "none";
+    		document.getElementById("content2_2").style.display = "none";
+    		document.getElementById("content3").style.display = "none";
+    		document.getElementById("content4").style.display = "block";
+    		document.getElementById("content5").style.display = "block";
+    		document.getElementById("toptab1").style.display = "none";
+		document.getElementById("toptab2").style.display = "block";
+ 		document.getElementById("toptab3").style.display = "none";
+    		openTab(evt);	
 }
 function openTab1(evt) {
 
     document.getElementById("content1").style.display = "none";
-    document.getElementById("content2_1").style.display = "none";
-    document.getElementById("content2_2").style.display = "none";
-    document.getElementById("content3").style.display = "none";
-    document.getElementById("content4").style.display = "none";
-    document.getElementById("content5").style.display = "none";
-    document.getElementById("toptab2").style.display = "block";
-    document.getElementById("toptab1").style.display = "none";
-    openTab(evt);
+    		document.getElementById("content2_1").style.display = "none";
+    		document.getElementById("content2_2").style.display = "none";
+    		document.getElementById("content3").style.display = "none";
+    		document.getElementById("content4").style.display = "none";
+    		document.getElementById("content5").style.display = "none";
+    		document.getElementById("toptab1").style.display = "none";
+		document.getElementById("toptab2").style.display = "none";
+		document.getElementById("toptab3").style.display = "block";
+    		openTab(evt);
+
 }
+function openTab(evt) {
+  var i, tablinks;
+  tablinks = document.getElementsByClassName("tab button");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  evt.currentTarget.className += " active";
+}
+
 function openTab(evt) {
   var i, tablinks;
   tablinks = document.getElementsByClassName("tab button");
