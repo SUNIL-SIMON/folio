@@ -100,15 +100,6 @@ function openTab(evt) {
   }
   evt.currentTarget.className += " active";
 }
-
-function openTab(evt) {
-  var i, tablinks;
-  tablinks = document.getElementsByClassName("tab button");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  evt.currentTarget.className += " active";
-}
 function resizeTabs(width)
 {
   if(width < 500){
