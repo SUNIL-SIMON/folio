@@ -19,7 +19,7 @@ var srcArrayT3 =["SI_td1.jpg","SI_td2.jpg","SI_td1.jpg","SI_td2.jpg","SI_td1.jpg
 
 var load = 0;
 
-document.getElementById("defaultOpen").click();
+defaultopener();
 resizedWindow();
 
 
@@ -51,8 +51,23 @@ function resizedWindow(){
   document.getElementById("imagecontainer1").style.width = wdt10;
 
 }
+function defaultopener()
+{
+	if(localStorage.getItem("tabid") == "contact")
+	{
+		document.getElementById("contact").click();
+	}
+	else if(localStorage.getItem("tabid") == "adaptability")
+	{
+		document.getElementById("adaptability").click();
+	}
+	else
+	{
+		document.getElementById("defaultOpen").click();
+	}
+}
 function openTab3(evt) {
-
+	localStorage.setItem("tabid", "about");
      document.getElementById("content1").style.display = "block";
     		document.getElementById("content2_1").style.display = "block";
     		document.getElementById("content2_2").style.display = "block";
@@ -66,7 +81,7 @@ function openTab3(evt) {
 
 }
 function openTab2(evt) {
-
+	localStorage.setItem("tabid", "adaptability");
         document.getElementById("content1").style.display = "block";
     		document.getElementById("content2_1").style.display = "none";
     		document.getElementById("content2_2").style.display = "none";
@@ -79,7 +94,7 @@ function openTab2(evt) {
     		openTab(evt);	
 }
 function openTab1(evt) {
-
+	localStorage.setItem("tabid", "contact");
     document.getElementById("content1").style.display = "none";
     		document.getElementById("content2_1").style.display = "none";
     		document.getElementById("content2_2").style.display = "none";

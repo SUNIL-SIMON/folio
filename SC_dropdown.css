@@ -55,6 +55,7 @@ position: relative;
   bottom: 75%;
   Left : 25%;
   z-index: 1;
+  font-size: 18px;
 }
 
 .dropup-content a {
