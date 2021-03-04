@@ -31,6 +31,8 @@ function resizedWindow(){
   resizeBottomCards(w);
   resizeTabs(w);
   resizeSocialMedia(w);
+  google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
   var wdt7 =  (w * 0.35) + "px";
   document.getElementById("content1").style.height = wdt7;
   document.getElementById("aboutC1").style.height = wdt7;
@@ -244,3 +246,41 @@ function openWorkSite()
 
 
 
+function drawChart() {
+  var w = window.outerWidth;
+  resizepie(w);
+}
+function resizepie(width)
+{
+var wdt =  (width * 1);
+var wdt2 =  600;
+var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Swift (macOS, iOS)', 8],
+  ['Objective C (macOS, iOS)', 8],
+  ['Android', 2],
+  ['HTML/CSS', 4],
+  ['JavaScript', 4],
+  ['Python', 4],
+  ['Node JS', 2],
+  ['React JS', 2],
+  ['Java', 4],
+  ['C++/C#', 7]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'width': wdt, 'height': wdt2, 'backgroundColor' : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, slices: {  0: {offset: 0.05},
+                    1: {offset: 0.05},
+                    3: {offset: 0.05},
+                    4: {offset: 0.05},
+		5: {offset: 0.05},
+		6: {offset: 0.05},
+		7: {offset: 0.05},
+	  }
+          };
+var options2 = {'width':650, 'height':600, 'backgroundColor' : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, pieHole: 0.8,legend: {position: 'none'}};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
