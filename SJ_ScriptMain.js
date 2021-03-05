@@ -252,35 +252,72 @@ function drawChart() {
 }
 function resizepie(width)
 {
-var wdt =  (width * 1);
-var wdt2 =  600;
+var wdt =  (width * 0.5);
+var wdt2 =  500;
+var wdt3 =  (width * 0.25);
+var wdt4 =  400;
+var wdt5 =  ((width * 0.25) * 0.5) + "px";
+var wdt6 =  (width * 1);
+var wdt7 =  500;
 var data = google.visualization.arrayToDataTable([
   ['Task', 'Hours per Day'],
   ['Swift (macOS, iOS)', 8],
   ['Objective C (macOS, iOS)', 8],
+
   ['Android', 2],
+
   ['HTML/CSS', 4],
   ['JavaScript', 4],
   ['Python', 4],
   ['Node JS', 2],
   ['React JS', 2],
+
   ['Java', 4],
   ['C++/C#', 7]
 ]);
+var data2 = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['iOS/MacOS', 16],
+  ['dummy', 2],
+  ['Web', 16],
+  ['Others', 11]
+]);
 
   // Optional; add a title and set the width and height of the chart
-  var options = {'width': wdt, 'height': wdt2, 'backgroundColor' : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, slices: {  0: {offset: 0.05},
-                    1: {offset: 0.05},
-                    3: {offset: 0.05},
-                    4: {offset: 0.05},
-		5: {offset: 0.05},
-		6: {offset: 0.05},
-		7: {offset: 0.05},
-	  }
-          };
-var options2 = {'width':650, 'height':600, 'backgroundColor' : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, pieHole: 0.8,legend: {position: 'none'}};
+  var options = {'width': wdt3, 'height': wdt4, 'backgroundColor' : 'transparent',pieSliceBorderColor : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, legend: {position: 'none'}, slices: {  
+0: {offset: 0.2,color: '#ffc0c0'},
+1: {offset: 0.2,color: '#ff9595'},
+
+2: {offset: 0.2,color: '#117c6f'},
+
+3: {offset: 0.2,color: '#8359b8'},
+4: {offset: 0.2,color: '#d3b7ec'},
+5: {offset: 0.2,color: '#a58edf'},
+6: {offset: 0.2,color: '#c6cceb'},
+7: {offset: 0.2,color: '#818396'},
+
+8: {offset: 0.2,color: '#289c8e'},
+9: {offset: 0.2,color: '#8de5db'},
+},
+
+};
+var options2 = {'width': wdt, 'height': wdt2, 'backgroundColor' : 'transparent',pieSliceBorderColor : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, pieHole: 0.8,legend: {position: 'none'},pieSliceText: 'none',
+slices: {  
+0: {offset: 0.05,color: '#ff0000'},
+1: {offset: 0.05,color: 'transparent'},
+2: {offset: 0.05,color: '#3e2c6b'},
+3: {offset: 0.05,color: 'transparent'},
+}};
+
 
   // Display the chart inside the <div> element with id="piechart"
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
   chart.draw(data, options);
+
+  var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart2.draw(data2, options2);
+
+
+  document.getElementById("piechart").style.paddingTop = "50px";
+  document.getElementById("piechart").style.paddingLeft = wdt5;
 }
