@@ -282,7 +282,7 @@ var data = google.visualization.arrayToDataTable([
   ['React JS', 2],
 
   ['Java', 4],
-  ['C++/C#', 7]
+  ['C++ / C#', 7]
 ]);
 var data2 = google.visualization.arrayToDataTable([
   ['', ''],
