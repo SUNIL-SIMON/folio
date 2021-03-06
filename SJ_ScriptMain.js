@@ -253,12 +253,18 @@ function drawChart() {
 function resizepie(width)
 {
 var wdt =  (width * 0.5);
-var wdt2 =  500;
-var wdt3 =  (width * 0.25);
-var wdt4 =  400;
+var wdt2 = (width * 0.5)
+
 var wdt5 =  ((width * 0.25) * 0.5) + "px";
 var wdt6 =  (width * 1);
-var wdt7 =  500;
+var wdt7 =  (width * 0.5);
+
+
+var wdt3 =  (width * 0.25);
+var wdt10 =  wdt3 + "px";
+var wdt12 =  (wdt3 * 0.5) + "px";
+var wdt13 =  ((wdt * 0.5) - (wdt3 * 0.5)) + "px";
+
 var data = google.visualization.arrayToDataTable([
   ['Task', 'Hours per Day'],
   ['Swift (macOS, iOS)', 8],
@@ -284,7 +290,7 @@ var data2 = google.visualization.arrayToDataTable([
 ]);
 
   // Optional; add a title and set the width and height of the chart
-  var options = {'width': wdt3, 'height': wdt4, 'backgroundColor' : 'transparent',pieSliceBorderColor : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, legend: {position: 'none'}, slices: {  
+  var options = { 'width': wdt3, 'height': wdt3,'backgroundColor' : 'transparent',pieSliceBorderColor : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, legend: {position: 'none'}, slices: {  
 0: {offset: 0.2,color: '#ffc0c0'},
 1: {offset: 0.2,color: '#ff9595'},
 
@@ -301,7 +307,7 @@ var data2 = google.visualization.arrayToDataTable([
 },
 
 };
-var options2 = {'width': wdt, 'height': wdt2, 'backgroundColor' : 'transparent',pieSliceBorderColor : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, pieHole: 0.8,legend: {position: 'none'},pieSliceText: 'none',
+var options2 = {'width': wdt, 'height': wdt2, 'backgroundColor' : 'transparent',pieSliceBorderColor : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, pieHole: 0.6,legend: {position: 'none'},pieSliceText: 'none',
 slices: {  
 0: {offset: 0.05,color: '#ff0000'},
 1: {offset: 0.05,color: 'transparent'},
@@ -313,11 +319,14 @@ slices: {
   // Display the chart inside the <div> element with id="piechart"
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
   chart.draw(data, options);
-
   var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
   chart2.draw(data2, options2);
 
 
-  document.getElementById("piechart").style.paddingTop = "50px";
-  document.getElementById("piechart").style.paddingLeft = wdt5;
+document.getElementById("piechart").style.marginTop = wdt13;
+document.getElementById("piechart").style.marginLeft = wdt13;
+
+  document.getElementById("piechart").style.borderRadius = wdt12;
+  document.getElementById("piechart").style.width = wdt10;
+  document.getElementById("piechart").style.height = wdt10;
 }
