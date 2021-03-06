@@ -172,6 +172,9 @@ function resizeBottomCards(width)
   var wdt3 =  (width * 0.028) + "px";
   document.getElementById("social6").style.fontSize = wdt3;
 
+  var wdt6 =  (width * 0.025) + "px";
+  document.getElementById("legends").style.fontSize = wdt6;
+
   var wdt5 =  ((width * 0.33) * 0.1) + "px";
   document.getElementById("floatingbtn4s1").style.top = wdt5;
   document.getElementById("floatingbtn4s1").style.left = wdt5;
@@ -266,13 +269,13 @@ var wdt12 =  (wdt3 * 0.5) + "px";
 var wdt13 =  ((wdt * 0.5) - (wdt3 * 0.5)) + "px";
 
 var data = google.visualization.arrayToDataTable([
-  ['Task', 'Hours per Day'],
-  ['Swift (macOS, iOS)', 8],
-  ['Objective C (macOS, iOS)', 8],
+  ['', ''],
+  ['Swift', 8],
+  ['Objective C', 8],
 
-  ['Android', 2],
+  ['Android Development', 2],
 
-  ['HTML/CSS', 4],
+  ['HTML / CSS', 4],
   ['JavaScript', 4],
   ['Python', 4],
   ['Node JS', 2],
@@ -282,11 +285,11 @@ var data = google.visualization.arrayToDataTable([
   ['C++/C#', 7]
 ]);
 var data2 = google.visualization.arrayToDataTable([
-  ['Task', 'Hours per Day'],
-  ['iOS/MacOS', 16],
+  ['', ''],
+  ['iOS / MacOS Development', 16],
   ['dummy', 2],
-  ['Web', 16],
-  ['Others', 11]
+  ['Full Stack Web Development', 16],
+  ['Core Development', 11]
 ]);
 
   // Optional; add a title and set the width and height of the chart
@@ -294,7 +297,7 @@ var data2 = google.visualization.arrayToDataTable([
 0: {offset: 0.2,color: '#ffc0c0'},
 1: {offset: 0.2,color: '#ff9595'},
 
-2: {offset: 0.2,color: '#117c6f'},
+2: {offset: 0.8,color: '#117c6f'},
 
 3: {offset: 0.2,color: '#8359b8'},
 4: {offset: 0.2,color: '#d3b7ec'},
@@ -302,8 +305,8 @@ var data2 = google.visualization.arrayToDataTable([
 6: {offset: 0.2,color: '#c6cceb'},
 7: {offset: 0.2,color: '#818396'},
 
-8: {offset: 0.2,color: '#289c8e'},
-9: {offset: 0.2,color: '#8de5db'},
+8: {offset: 0.2,color: '#00ddfd'},
+9: {offset: 0.2,color: '#00f7fd'},
 },
 
 };
@@ -312,7 +315,7 @@ slices: {
 0: {offset: 0.05,color: '#ff0000'},
 1: {offset: 0.05,color: 'transparent'},
 2: {offset: 0.05,color: '#3e2c6b'},
-3: {offset: 0.05,color: 'transparent'},
+3: {offset: 0.05,color: '#00b7fd'},
 }};
 
 
