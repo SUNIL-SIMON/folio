@@ -33,7 +33,7 @@ function resizedWindow(){
   resizeSocialMedia(w);
   google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
-  var wdt7 =  (w * 0.35) + "px";
+  var wdt7 =  (w * 0.42) + "px";
   document.getElementById("content1").style.height = wdt7;
   document.getElementById("aboutC1").style.height = wdt7;
   document.getElementById("fun").style.height = wdt7;
