@@ -19,26 +19,37 @@ var srcArrayT3 =["SI_td1.jpg","SI_td2.jpg","SI_td1.jpg","SI_td2.jpg","SI_td1.jpg
 
 var load = 0;
 
+var opacity = 0;
+
 defaultopener();
 resizedWindow();
 
 
 function resizedWindow(){
+  
   var w = window.outerWidth;
   var h = window.outerHeight;
 
   resizeFUN_TECH_views(w);
+  
   resizeBottomCards(w);
+  
   resizeTabs(w);
+  
   resizeSocialMedia(w);
+  
+  
+
   google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+  google.charts.setOnLoadCallback(drawChart);
   var wdt7 =  (w * 0.42) + "px";
   document.getElementById("content1").style.height = wdt7;
-  document.getElementById("aboutC1").style.height = wdt7;
+  // document.getElementById("aboutC1").style.height = wdt7;
   document.getElementById("fun").style.height = wdt7;
   document.getElementById("techi").style.height = wdt7;
-  document.getElementById("imagecontainer").style.height = wdt7;
+  // document.getElementById("imagecontainer").style.height = wdt7;
+
+ 
 
   var wdt8 =  (w * 0.15) + "px";
   document.getElementById("skillContent").style.height = wdt8;
@@ -52,6 +63,10 @@ google.charts.setOnLoadCallback(drawChart);
   document.getElementById("imagecontainer1").style.height = wdt9;
   document.getElementById("imagecontainer1").style.width = wdt10;
 
+  // var wdt10 =  (w * 0.4) + "px";
+  // document.getElementById("toptab1").style.paddingTop = "115px";
+  
+  // console.log({ toph, toph });
 }
 function defaultopener()
 {
@@ -63,52 +78,96 @@ function defaultopener()
 	{
 		document.getElementById("adaptability").click();
 	}
+  else if(localStorage.getItem("tabid") == "projects")
+	{
+		document.getElementById("projects").click();
+	}
+  else if(localStorage.getItem("tabid") == "publication")
+	{
+		document.getElementById("publication").click();
+	}
 	else
 	{
 		document.getElementById("defaultOpen").click();
 	}
-}
-function openTab3(evt) {
-	localStorage.setItem("tabid", "about");
-     document.getElementById("content1").style.display = "block";
-    		document.getElementById("content2_1").style.display = "block";
-    		document.getElementById("content2_2").style.display = "block";
-    		document.getElementById("content3").style.display = "block";
-    		document.getElementById("content4").style.display = "none";
-    		document.getElementById("content5").style.display = "none";
-    		document.getElementById("toptab1").style.display = "block";
-		document.getElementById("toptab2").style.display = "none";
- 		document.getElementById("toptab3").style.display = "none";
-    		openTab(evt);
-
-}
-function openTab2(evt) {
-	localStorage.setItem("tabid", "adaptability");
-        document.getElementById("content1").style.display = "block";
-    		document.getElementById("content2_1").style.display = "none";
-    		document.getElementById("content2_2").style.display = "none";
-    		document.getElementById("content3").style.display = "none";
-    		document.getElementById("content4").style.display = "block";
-    		document.getElementById("content5").style.display = "block";
-    		document.getElementById("toptab1").style.display = "none";
-		document.getElementById("toptab2").style.display = "block";
- 		document.getElementById("toptab3").style.display = "none";
-    		openTab(evt);	
+  // document.getElementById("techi").style.animationDelay = "1s";
+  // document.getElementById("techi").onmouseover();
 }
 function openTab1(evt) {
-	localStorage.setItem("tabid", "contact");
-    document.getElementById("content1").style.display = "none";
-    		document.getElementById("content2_1").style.display = "none";
-    		document.getElementById("content2_2").style.display = "none";
-    		document.getElementById("content3").style.display = "none";
-    		document.getElementById("content4").style.display = "none";
-    		document.getElementById("content5").style.display = "none";
-    		document.getElementById("toptab1").style.display = "none";
-		document.getElementById("toptab2").style.display = "none";
-		document.getElementById("toptab3").style.display = "block";
-    		openTab(evt);
-
+  localStorage.setItem("tabid", "about");
+  document.getElementById("toptab3").scrollIntoView({paddingTop : "200px", behavior: 'smooth'});
+  openTab(evt);
 }
+function openTab2(evt) {
+  localStorage.setItem("tabid", "about");
+  document.getElementById("toptab2").scrollIntoView({paddingTop : "200px", behavior: 'smooth'});
+  openTab(evt);
+}
+function openTab3(evt) {
+  localStorage.setItem("tabid", "about");
+  document.getElementById("content2_1").scrollIntoView({paddingTop : "200px", behavior: 'smooth'});
+  openTab(evt);
+}
+function openTab4(evt) {
+  localStorage.setItem("tabid", "about");
+  document.getElementById("toptab1").scrollIntoView({paddingTop : "200px", behavior: 'smooth'});
+  openTab(evt);
+}
+function openTab5(evt) {
+  localStorage.setItem("tabid", "about");
+  document.getElementById("content3").scrollIntoView({ paddingTop : "200px",behavior: 'smooth'});
+  openTab(evt);
+}
+// function openTab4(evt) {
+// 	localStorage.setItem("tabid", "about");
+//   document.getElementById("toptab3").scrollIntoView();
+//   //    document.getElementById("content1").style.display = "block";
+//   //   		document.getElementById("content2_1").style.display = "block";
+//   //   		document.getElementById("content2_2").style.display = "block";
+//   //   		document.getElementById("content3").style.display = "block";
+//   //   		document.getElementById("content4").style.display = "none";
+//   //   		document.getElementById("content5").style.display = "none";
+//   //   		document.getElementById("toptab1").style.display = "block";
+// 	// 	document.getElementById("toptab2").style.display = "none";
+//  	// 	document.getElementById("toptab3").style.display = "none";
+//     		openTab(evt);
+
+// }
+// function openTab2(evt) {
+//   localStorage.setItem("tabid", "adaptability");
+//   document.getElementById("toptab2").scrollIntoView();
+//   // document.getElementsByTagName('toptab3').scrollIntoView();
+// 	// 
+//   // document.getElementsByTagName('toptab3').scrollIntoView();
+//   //       document.getElementById("content1").style.display = "block";
+//   //   		document.getElementById("content2_1").style.display = "none";
+//   //   		document.getElementById("content2_2").style.display = "none";
+//   //   		document.getElementById("content3").style.display = "none";
+//   //   		document.getElementById("content4").style.display = "block";
+//   //   		document.getElementById("content5").style.display = "block";
+//   //   		document.getElementById("toptab1").style.display = "none";
+// 	// 	document.getElementById("toptab2").style.display = "block";
+//  	// 	document.getElementById("toptab3").style.display = "none";
+//     		openTab(evt);	
+// }
+// function openTab1(evt) {
+//   localStorage.setItem("tabid", "adaptability");
+//   document.getElementById("toptab1").scrollIntoView();
+//   // document.getElementsByTagName('toptab1').scrollIntoView();
+// 	// localStorage.setItem("tabid", "contact");
+//   // document.getElementsByTagName('toptab1').scrollIntoView();
+//     // document.getElementById("content1").style.display = "none";
+//   //   		document.getElementById("content2_1").style.display = "none";
+//   //   		document.getElementById("content2_2").style.display = "none";
+//   //   		document.getElementById("content3").style.display = "none";
+//   //   		document.getElementById("content4").style.display = "none";
+//   //   		document.getElementById("content5").style.display = "none";
+//   //   		document.getElementById("toptab1").style.display = "none";
+// 	// 	document.getElementById("toptab2").style.display = "none";
+// 	// 	document.getElementById("toptab3").style.display = "block";
+//     		openTab(evt);
+
+// }
 function openTab(evt) {
   var i, tablinks;
   tablinks = document.getElementsByClassName("tab button");
@@ -119,21 +178,40 @@ function openTab(evt) {
 }
 function resizeTabs(width)
 {
-  if(width < 500){
+
+  if(width < 300){
+    document.getElementById("defaultOpen").style.fontSize = "13px";
+    document.getElementById("contact").style.fontSize = "13px";
+    document.getElementById("adaptability").style.fontSize = "13px";
+    document.getElementById("publication").style.fontSize = "13px";
+    document.getElementById("projects").style.fontSize = "13px";
+    document.getElementById("toptab1").style.paddingTop = "655px";
+  }
+  else if(width < 500){
 	document.getElementById("defaultOpen").style.fontSize = "13px";
 	document.getElementById("contact").style.fontSize = "13px";
 	document.getElementById("adaptability").style.fontSize = "13px";
+  document.getElementById("publication").style.fontSize = "13px";
+  document.getElementById("projects").style.fontSize = "13px";
+  document.getElementById("toptab1").style.paddingTop = "655px";
   }
   else if(width < 1000){
 	document.getElementById("defaultOpen").style.fontSize = "15px";
 	document.getElementById("contact").style.fontSize = "15px";
 	document.getElementById("adaptability").style.fontSize = "15px";
+  document.getElementById("publication").style.fontSize = "15px";
+  document.getElementById("projects").style.fontSize = "15px";
+  document.getElementById("toptab1").style.paddingTop = "120px";
   }
   else
   {
 	document.getElementById("defaultOpen").style.fontSize = "20px";
 	document.getElementById("contact").style.fontSize = "20px";
 	document.getElementById("adaptability").style.fontSize = "20px";
+  document.getElementById("publication").style.fontSize = "20px";
+  document.getElementById("projects").style.fontSize = "20px";
+
+  document.getElementById("toptab1").style.paddingTop = "115px";
   }
 }
 function resizeFUN_TECH_views(width) {
@@ -161,53 +239,100 @@ function resizeBottomCards(width)
   document.getElementById("vcard7").style.height = wdt;
   document.getElementById("vcard8").style.height = wdt;
   document.getElementById("vcard9").style.height = wdt;
+
+  document.getElementById("vcard10").style.height = wdt;
   
   var wdt2 =  (width * 0.03) + "px";
-  document.getElementById("floatingbtn4st2").style.fontSize = wdt2;
-  document.getElementById("floatingbtn4st1").style.fontSize = wdt2;
+  document.getElementById("floatingbtn4s2").style.fontSize = wdt2;
+  document.getElementById("floatingbtn4s1").style.fontSize = wdt2;
 
   var wdt4 =  (width * 0.018) + "px";
   document.getElementById("skill").style.fontSize = wdt4;
 
-  var wdt3 =  (width * 0.028) + "px";
-  document.getElementById("social6").style.fontSize = wdt3;
+  // var wdt3 =  (width * 0.018) + "px";
+  // document.getElementById("social6").style.fontSize = wdt3;
 
-  var wdt6 =  (width * 0.025) + "px";
-  document.getElementById("legends").style.fontSize = wdt6;
+  // var wdt6 =  (width * 0.025) + "px";
+  // document.getElementById("legends").style.fontSize = wdt6;
 
-  var wdt5 =  ((width * 0.33) * 0.1) + "px";
-  document.getElementById("floatingbtn4s1").style.top = wdt5;
-  document.getElementById("floatingbtn4s1").style.left = wdt5;
-  document.getElementById("floatingbtn4s2").style.top = wdt5;
-  document.getElementById("floatingbtn4s2").style.left = wdt5;
-  document.getElementById("floatingbtn4s3").style.top = wdt5;
-  document.getElementById("floatingbtn4s3").style.left = wdt5;
-  document.getElementById("floatingbtn4s4").style.top = wdt5;
-  document.getElementById("floatingbtn4s4").style.left = wdt5;  
-  document.getElementById("floatingbtn4s5").style.top = wdt5;
-  document.getElementById("floatingbtn4s5").style.left = wdt5;  
+  // var wdt5 =  ((width * 0.33) * 0.1) + "px";
+  // document.getElementById("floatingbtn4s1").style.top = wdt5;
+  // document.getElementById("floatingbtn4s1").style.left = wdt5;
+  // document.getElementById("floatingbtn4s2").style.top = wdt5;
+  // document.getElementById("floatingbtn4s2").style.left = wdt5;
+  // document.getElementById("floatingbtn4s3").style.top = wdt5;
+  // document.getElementById("floatingbtn4s3").style.left = wdt5;
+  // document.getElementById("floatingbtn4s4").style.top = wdt5;
+  // document.getElementById("floatingbtn4s4").style.left = wdt5;  
+  // document.getElementById("floatingbtn4s5").style.top = wdt5;
+  // document.getElementById("floatingbtn4s5").style.left = wdt5;  
 
 }
 function resizeSocialMedia(width)
 {
-  var wdt3 =  (width * 0.1) + "px";
-  var wdt4 =  (width * 0.08) + "px";
-  document.getElementById("social7").style.width = wdt4;
-  document.getElementById("social7").style.height = wdt4;
-  document.getElementById("social1").style.width = wdt3;
-  document.getElementById("social1").style.height = wdt3;
-  document.getElementById("social2").style.width = wdt3;
-  document.getElementById("social2").style.height = wdt3;
-  document.getElementById("social3").style.width = wdt3;
-  document.getElementById("social3").style.height = wdt3;
-  document.getElementById("social4").style.width = wdt3;
-  document.getElementById("social4").style.height = wdt3;
-  document.getElementById("social5").style.width = wdt3;
-  document.getElementById("social5").style.height = wdt3;
-  document.getElementById("social8").style.width = wdt4;
-  document.getElementById("social8").style.height = wdt4;
-  document.getElementById("drop1").style.width = wdt4;
-  document.getElementById("drop1").style.height = wdt4;
+  // var wdt3 =  (width * 0.1) + "px";
+  // var wdt4 =  (width * 0.08) + "px";
+  // document.getElementById("social7").style.width = wdt4;
+  // document.getElementById("social7").style.height = wdt4;
+  // document.getElementById("social1").style.width = wdt3;
+  // document.getElementById("social1").style.height = wdt3;
+  // document.getElementById("social2").style.width = wdt3;
+  // document.getElementById("social2").style.height = wdt3;
+  // document.getElementById("social3").style.width = wdt3;
+  // document.getElementById("social3").style.height = wdt3;
+  // document.getElementById("social4").style.width = wdt3;
+  // document.getElementById("social4").style.height = wdt3;
+  // document.getElementById("social5").style.width = wdt3;
+  // document.getElementById("social5").style.height = wdt3;
+  // document.getElementById("social8").style.width = wdt4;
+  // document.getElementById("social8").style.height = wdt4;
+  // document.getElementById("drop1").style.width = wdt4;
+  // document.getElementById("drop1").style.height = wdt4;
+}
+function funHovered()
+{
+  document.getElementById("techi").style.display = "none";
+  document.getElementById("imagecontainer3").style.display = "none";
+  document.getElementById("imagecontainer2").style.display = "inline-block";
+  document.getElementById("imagecontainer").style.display = "none";
+  funHoveredAnimate()
+}
+function funHoveredAnimate()
+{
+  if (opacity<1) {
+    opacity += .1;
+    setTimeout(function(){funHoveredAnimate()},100);
+  }
+  document.getElementById('animateIMG1').style.opacity = opacity;
+  document.getElementById('animateIMG2').style.opacity = opacity;
+  document.getElementById('animateIMG3').style.opacity = opacity;
+}
+function techHovered()
+{
+  document.getElementById("fun").style.display = "none";
+  document.getElementById("imagecontainer3").style.display = "inline-block";
+  document.getElementById("imagecontainer2").style.display = "none";
+  document.getElementById("imagecontainer").style.display = "none";
+  techHoveredAnimate()
+}
+function techHoveredAnimate()
+{
+  if (opacity<1) {
+    opacity += .1;
+    setTimeout(function(){techHoveredAnimate()},100);
+  }
+  document.getElementById('animateIMG4').style.opacity = opacity;
+  document.getElementById('animateIMG5').style.opacity = opacity;
+  document.getElementById('animateIMG6').style.opacity = opacity;
+}
+function normalIt()
+{
+  opacity = 0;
+  document.getElementById("techi").style.display = "inline-block";
+  document.getElementById("fun").style.display = "inline-block";
+  document.getElementById("imagecontainer3").style.display = "none";
+  document.getElementById("imagecontainer2").style.display = "none";
+  document.getElementById("imagecontainer").style.display = "inline-block";
 }
 function  openLinkedin()
 {
@@ -320,16 +445,16 @@ slices: {
 
 
   // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-  var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
-  chart2.draw(data2, options2);
+//   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+//   chart.draw(data, options);
+//   var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+//   chart2.draw(data2, options2);
 
 
-document.getElementById("piechart").style.marginTop = wdt13;
-document.getElementById("piechart").style.marginLeft = wdt13;
+// document.getElementById("piechart").style.marginTop = wdt13;
+// document.getElementById("piechart").style.marginLeft = wdt13;
 
-  document.getElementById("piechart").style.borderRadius = wdt12;
-  document.getElementById("piechart").style.width = wdt10;
-  document.getElementById("piechart").style.height = wdt10;
+//   document.getElementById("piechart").style.borderRadius = wdt12;
+//   document.getElementById("piechart").style.width = wdt10;
+//   document.getElementById("piechart").style.height = wdt10;
 }

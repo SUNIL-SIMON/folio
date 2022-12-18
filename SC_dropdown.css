@@ -4,9 +4,9 @@
   opacity: 1;
   background-position: center;
   background-size: cover;
-  display: block;
+  display: inline-block;
 Padding: 0px 0px;
-position: relative;
+/* position: relative; */
  Text-align:left;
 font-size: 28px;
 }
@@ -16,24 +16,24 @@ font-size: 28px;
   opacity: 1;
   background-position: center;
   background-size: cover;
-  display: block;
-  margin : 3% 30%;
+  display: inline-block;
+  /* margin : 3% 30%; */
  padding: 0px 0px;
-position: relative;
+/* position: relative; */
  text-align:center;
 }
-.socialmworksmall {
-  margin : 5% 35%;
-}
-.socialmworksub {
+/* .socialmworksmall {
+  /* margin : 5% 35%; */
+/* } */ */
+/* .socialmworksub {
  background-image: url('SI_work.png');
-}
+} */
 .socialmwork:hover {
   animation-iteration-count: infinite; 
   animation: shake 0.5s;
 }
 .dropbtn {
-  background-image: url('SI_work.png');
+  /* background-image: url('SI_work.png'); */
   Background-color : transparent;
   font-size: 18px;
   border: none;

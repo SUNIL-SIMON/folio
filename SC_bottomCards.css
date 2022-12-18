@@ -1,25 +1,58 @@
 .transition1{
   transition: all 0.5s;
 }
+.content2 {
+  flex: 1 1 auto;
+}
+.content2sub1
+{
+background-image: linear-gradient(to right bottom, #8e0e00f5, #292828ef 45%);
+border-top: 1px solid #8e0e00;
+
+}
+.content2sub2
+{
+     background-image: linear-gradient(to right top,#292828ef 55%,#292828ef );
+}
+.bottomcardtextl {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+  cursor: pointer;
+  /* height : 100px; */
+  /* float: left; */
+  vertical-align: top;
+  white-space: nowrap;
+}
 .bottomCardBasel {
   display: inline-block;
   background-color: transparent;
   border: none;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 0px;
   font-family: "Courier New";
   cursor: pointer;
-  float : left
+  margin:0px;outline:none;
+  vertical-align: top;
+  /* float : left */
 }
 .bottomCardBasec {
   display: inline-block;
   background-color: transparent;
   border: none;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 0px;
   font-family: "Courier New";
   cursor: pointer;
-  float : center
+  margin:0px;outline:none;
+  padding: none;
+  vertical-align: top;
+  /* aspect-ratio: 1 / 1; */
+  /* float : center */
 }
 
 .bottomCardBaser {
@@ -27,13 +60,15 @@
   background-color: transparent;
   border: none;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 0px;
   font-family: "Courier New";
   cursor: pointer;
-  float : right
+  margin:0px;outline:none;
+  padding: none;
+  /* float : right */
 }
 .bottomCard {
-  display: inline-block;
+  /* display: inline-block; */
   background-size:cover;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -41,11 +76,20 @@
   color: #ffffff;
   font-size: 20px;
   cursor: pointer;
-  height : 80%;
-  width: 80%;
+  height : 60%;
+  width: 60%;
   position: relative;
   border-radius: 5%;
   background-image: linear-gradient(to right, #70e1f5,#ffd194);
+  margin: auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.bottomCardInner:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
 }
 .bottomCardInner {
   display: inline-block;
@@ -64,6 +108,11 @@
   position: relative;
   border-radius: 5%;
  
+}
+.bottomCardInnernonvideo1:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
 }
 .bottomCardInnernonvideo1 {
   background-image: url('SI_publication.png');
@@ -146,19 +195,21 @@
   background-image: linear-gradient(#70e1f5,#ffd194);
 }
 
-.bottomcardtextl
-{
-  Text-align:center;
-padding-top: 20%;
-color: #FFFFFF;
-font-size: 40px;
-}
+
 .bottomcardtextr
 {
-  Text-align:center;
-padding-top: 20%;
-color: #ffffff;
-font-size: 40px;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+  cursor: pointer;
+  /* height : 100px; */
+  /* float: left; */
+  vertical-align: top;
+  white-space: nowrap;
 }
 .skilltext {
   

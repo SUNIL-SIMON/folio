@@ -148,15 +148,7 @@ background-color: #e65c00;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.imagecontainer2 { 
-  display: inline-block;
-  background-color: transparent;
-  text-align: center;
-  float: center;
-  height: 100px;
-  position: relative;
-  top: 130px;
-}
+
 
 .center {
   margin: 0;

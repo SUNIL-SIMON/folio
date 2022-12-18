@@ -24,7 +24,7 @@
   color: #cdcdcd;
 }
 .tab button.active {
-  color: red;
+  color: #70e1f5;
 }
 .topright {
   float: right;
@@ -46,7 +46,7 @@
   -webkit-text-fill-color: transparent;
   
 }
-. toptabName {
+.toptabName {
   cursor: pointer;
   background-color: transparent;
   color: #e65c00;
