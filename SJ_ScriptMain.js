@@ -482,16 +482,16 @@ slices: {
 
 
   // Display the chart inside the <div> element with id="piechart"
-//   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-//   chart.draw(data, options);
-//   var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
-//   chart2.draw(data2, options2);
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+  var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart2.draw(data2, options2);
 
 
-// document.getElementById("piechart").style.marginTop = wdt13;
-// document.getElementById("piechart").style.marginLeft = wdt13;
+document.getElementById("piechart").style.marginTop = wdt13;
+document.getElementById("piechart").style.marginLeft = wdt13;
 
-//   document.getElementById("piechart").style.borderRadius = wdt12;
-//   document.getElementById("piechart").style.width = wdt10;
-//   document.getElementById("piechart").style.height = wdt10;
+  document.getElementById("piechart").style.borderRadius = wdt12;
+  document.getElementById("piechart").style.width = wdt10;
+  document.getElementById("piechart").style.height = wdt10;
 }
