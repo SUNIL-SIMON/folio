@@ -227,33 +227,48 @@ function resizeFUN_TECH_views(width) {
 }
 function resizeBottomCards(width)
 {
-  var wdt =  (width * 0.34) + "px";
+  var wdtw = (width * 0.32) + "px";
+  var wdt =  (width * 0.32) + "px";
   document.getElementById("vcard1").style.height = wdt;
+  document.getElementById("vcard1").style.width = wdtw;
   document.getElementById("vcard2").style.height = wdt;
+  document.getElementById("vcard2").style.width = wdtw;
   document.getElementById("vcard3").style.height = wdt;
+  document.getElementById("vcard3").style.width = wdtw;
 
   document.getElementById("vcard4").style.height = wdt;
+  document.getElementById("vcard4").style.width = wdtw;
   document.getElementById("vcard5").style.height = wdt;
+  document.getElementById("vcard5").style.width = wdtw;
   document.getElementById("vcard6").style.height = wdt;
-
-  document.getElementById("vcard7").style.height = wdt;
-  document.getElementById("vcard8").style.height = wdt;
-  document.getElementById("vcard9").style.height = wdt;
+  document.getElementById("vcard6").style.width = wdtw;
 
   document.getElementById("vcard10").style.height = wdt;
+  document.getElementById("vcard10").style.width = wdtw;
+
+  document.getElementById("vcard7").style.height = wdt;
+  document.getElementById("vcard7").style.width = wdtw;
+  document.getElementById("vcard8").style.height = wdt;
+  document.getElementById("vcard8").style.width = wdtw;
+  document.getElementById("vcard9").style.height = wdt;
+  document.getElementById("vcard9").style.width = wdtw;
+
+  
   
   var wdt2 =  (width * 0.03) + "px";
   document.getElementById("floatingbtn4s2").style.fontSize = wdt2;
   document.getElementById("floatingbtn4s1").style.fontSize = wdt2;
 
-  var wdt4 =  (width * 0.018) + "px";
+  var wdt4 =  (width * 0.023) + "px";
   document.getElementById("skill").style.fontSize = wdt4;
+  document.getElementById("vcard3").style.fontSize = wdt4;
+  document.getElementById("vcard9").style.fontSize = wdt4;
 
   // var wdt3 =  (width * 0.018) + "px";
   // document.getElementById("social6").style.fontSize = wdt3;
 
-  // var wdt6 =  (width * 0.025) + "px";
-  // document.getElementById("legends").style.fontSize = wdt6;
+  var wdt6 =  (width * 0.025) + "px";
+  document.getElementById("legends").style.fontSize = wdt6;
 
   // var wdt5 =  ((width * 0.33) * 0.1) + "px";
   // document.getElementById("floatingbtn4s1").style.top = wdt5;
@@ -270,24 +285,34 @@ function resizeBottomCards(width)
 }
 function resizeSocialMedia(width)
 {
-  // var wdt3 =  (width * 0.1) + "px";
-  // var wdt4 =  (width * 0.08) + "px";
+  var wdt3 =  (width * 0.1) + "px";
+  var wdt4 =  (width * 0.08) + "px";
   // document.getElementById("social7").style.width = wdt4;
   // document.getElementById("social7").style.height = wdt4;
-  // document.getElementById("social1").style.width = wdt3;
-  // document.getElementById("social1").style.height = wdt3;
-  // document.getElementById("social2").style.width = wdt3;
-  // document.getElementById("social2").style.height = wdt3;
-  // document.getElementById("social3").style.width = wdt3;
-  // document.getElementById("social3").style.height = wdt3;
-  // document.getElementById("social4").style.width = wdt3;
-  // document.getElementById("social4").style.height = wdt3;
-  // document.getElementById("social5").style.width = wdt3;
-  // document.getElementById("social5").style.height = wdt3;
+  document.getElementById("social1").style.width = wdt3;
+  document.getElementById("social1").style.height = wdt4;
+  document.getElementById("social2").style.width = wdt3;
+  document.getElementById("social2").style.height = wdt4;
+  document.getElementById("social3").style.width = wdt3;
+  document.getElementById("social3").style.height = wdt4;
+  document.getElementById("social4").style.width = wdt3;
+  document.getElementById("social4").style.height = wdt4;
+  document.getElementById("social5").style.width = wdt3;
+  document.getElementById("social5").style.height = wdt4;
   // document.getElementById("social8").style.width = wdt4;
   // document.getElementById("social8").style.height = wdt4;
-  // document.getElementById("drop1").style.width = wdt4;
-  // document.getElementById("drop1").style.height = wdt4;
+
+  var wdt5 =  (width * 0.08) + "px";
+  var wdt6 =  (width * 0.06) + "px";
+
+  document.getElementById("drop1").style.width = wdt5;
+  document.getElementById("drop1").style.height = wdt6;
+
+  var wdt7 =  (width * 0.07) + "px";
+  var wdt8 =  (width * 0.05) + "px";
+
+  document.getElementById("drop2").style.width = wdt7;
+  document.getElementById("drop2").style.height = wdt8;
 }
 function funHovered()
 {
