@@ -20,11 +20,11 @@
 }
 .content4sub
 {
-      background-image: linear-gradient(to right, #8e0e00de, #000000de  );
+      background-image: linear-gradient(to right bottom, #8e0e00f5, #292828ef 45%);;
 }
 .content5sub
 {
-      background-image: linear-gradient(to right, #8e0e00de, #000000de  );
+      background-image: linear-gradient(to right, #292828ef, #292828ef  );
 }
 .footer {
         flex: 0 1 auto;

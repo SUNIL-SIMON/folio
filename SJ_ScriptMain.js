@@ -251,6 +251,9 @@ function resizeBottomCards(width)
 
   document.getElementById("vcard10").style.height = wdt;
   document.getElementById("vcard10").style.width = wdtw;
+  document.getElementById("vcard11").style.height = wdt;
+  document.getElementById("vcard11").style.width = wdtw;
+
 
   document.getElementById("vcard7").style.height = wdt;
   document.getElementById("vcard7").style.width = wdtw;
