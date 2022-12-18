@@ -63,8 +63,7 @@ function resizedWindow(){
   document.getElementById("imagecontainer1").style.height = wdt9;
   document.getElementById("imagecontainer1").style.width = wdt10;
 
-  // var wdt10 =  (w * 0.4) + "px";
-  // document.getElementById("toptab1").style.paddingTop = "115px";
+  
   
   // console.log({ toph, toph });
 }
@@ -95,27 +94,31 @@ function defaultopener()
 }
 function openTab1(evt) {
   localStorage.setItem("tabid", "about");
-  document.getElementById("toptab3").scrollIntoView({paddingTop : "200px", behavior: 'smooth'});
+  var wdt10 =  document.getElementById("topbars").getBoundingClientRect().height + "px";;
+  document.getElementById("toptab3").scrollIntoView({top : wdt10, behavior: 'smooth'});
   openTab(evt);
 }
 function openTab2(evt) {
   localStorage.setItem("tabid", "about");
-  document.getElementById("toptab2").scrollIntoView({paddingTop : "200px", behavior: 'smooth'});
+  var wdt10 =  document.getElementById("topbars").getBoundingClientRect().height + "px";;
+  document.getElementById("toptab2").scrollIntoView({top : wdt10, behavior: 'smooth'});
   openTab(evt);
 }
 function openTab3(evt) {
   localStorage.setItem("tabid", "about");
-  document.getElementById("content2_1").scrollIntoView({paddingTop : "200px", behavior: 'smooth'});
+  var wdt10 =  document.getElementById("topbars").getBoundingClientRect().height + "px";;
+  document.getElementById("content2_1").scrollIntoView({top : wdt10, behavior: 'smooth'});
   openTab(evt);
 }
 function openTab4(evt) {
   localStorage.setItem("tabid", "about");
-  document.getElementById("toptab1").scrollIntoView({paddingTop : "200px", behavior: 'smooth'});
+  document.getElementById("toptab1").scrollIntoView({top : 0, behavior: 'smooth'});
   openTab(evt);
 }
 function openTab5(evt) {
   localStorage.setItem("tabid", "about");
-  document.getElementById("content3").scrollIntoView({ paddingTop : "200px",behavior: 'smooth'});
+  var wdt10 =  document.getElementById("topbars").getBoundingClientRect().height + "px";;
+  document.getElementById("content3").scrollIntoView({ top : wdt10,behavior: 'smooth'});
   openTab(evt);
 }
 // function openTab4(evt) {
@@ -185,7 +188,7 @@ function resizeTabs(width)
     document.getElementById("adaptability").style.fontSize = "13px";
     document.getElementById("publication").style.fontSize = "13px";
     document.getElementById("projects").style.fontSize = "13px";
-    document.getElementById("toptab1").style.paddingTop = "655px";
+    // document.getElementById("toptab1").style.paddingTop = "655px";
   }
   else if(width < 500){
 	document.getElementById("defaultOpen").style.fontSize = "13px";
@@ -193,7 +196,7 @@ function resizeTabs(width)
 	document.getElementById("adaptability").style.fontSize = "13px";
   document.getElementById("publication").style.fontSize = "13px";
   document.getElementById("projects").style.fontSize = "13px";
-  document.getElementById("toptab1").style.paddingTop = "655px";
+  // document.getElementById("toptab1").style.paddingTop = "655px";
   }
   else if(width < 1000){
 	document.getElementById("defaultOpen").style.fontSize = "15px";
@@ -201,7 +204,7 @@ function resizeTabs(width)
 	document.getElementById("adaptability").style.fontSize = "15px";
   document.getElementById("publication").style.fontSize = "15px";
   document.getElementById("projects").style.fontSize = "15px";
-  document.getElementById("toptab1").style.paddingTop = "120px";
+  // document.getElementById("toptab1").style.paddingTop = "120px";
   }
   else
   {
@@ -211,8 +214,11 @@ function resizeTabs(width)
   document.getElementById("publication").style.fontSize = "20px";
   document.getElementById("projects").style.fontSize = "20px";
 
-  document.getElementById("toptab1").style.paddingTop = "115px";
+  // document.getElementById("toptab1").style.paddingTop = "115px";
   }
+
+  var wdt10 =  document.getElementById("topbars").getBoundingClientRect().height + "px";;
+  document.getElementById("toptab1").style.paddingTop = wdt10;
 }
 function resizeFUN_TECH_views(width) {
   var wdt =  (width * 0.023) + "px";
@@ -308,11 +314,17 @@ function resizeSocialMedia(width)
   document.getElementById("drop1").style.width = wdt5;
   document.getElementById("drop1").style.height = wdt6;
 
-  var wdt7 =  (width * 0.07) + "px";
-  var wdt8 =  (width * 0.05) + "px";
+  var wdt7 =  (width * 0.10) + "px";
+  var wdt8 =  (width * 0.06) + "px";
 
   document.getElementById("drop2").style.width = wdt7;
   document.getElementById("drop2").style.height = wdt8;
+}
+function closeAlert()
+{
+  document.getElementById("alert").style.display = "none";
+  var wdt10 =  document.getElementById("topbars").getBoundingClientRect().height + "px";;
+  document.getElementById("toptab1").style.paddingTop = wdt10;
 }
 function funHovered()
 {
