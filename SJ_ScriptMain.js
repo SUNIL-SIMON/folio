@@ -21,6 +21,10 @@ var load = 0;
 
 var opacity = 0;
 
+var id = null;
+var pos = 0;
+clearInterval(id);
+
 defaultopener();
 resizedWindow();
 
@@ -91,6 +95,35 @@ function defaultopener()
 	}
   // document.getElementById("techi").style.animationDelay = "1s";
   // document.getElementById("techi").onmouseover();
+
+  
+  id = setInterval(frame, 10);
+}
+function frame() {
+  if (pos == 350) {
+    clearInterval(id);
+    document.getElementById("fun").onmouseleave();
+    document.getElementById("techi").onmouseleave();
+  }
+  else if (pos == 250) {
+    pos++; 
+    document.getElementById("techi").onmouseleave();
+    document.getElementById("fun").onmouseover();
+  }
+  else if (pos == 200) {
+    pos++; 
+    document.getElementById("fun").onmouseleave();
+    document.getElementById("techi").onmouseleave();
+  }
+  else if (pos == 100) {
+    pos++; 
+    document.getElementById("fun").onmouseleave();
+    document.getElementById("techi").onmouseover();
+  }
+  else {
+    pos++; 
+    
+  }
 }
 function openTab1(evt) {
   localStorage.setItem("tabid", "about");
