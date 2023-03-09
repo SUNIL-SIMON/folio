@@ -286,6 +286,8 @@ function resizeBottomCards(width)
   document.getElementById("vcard10").style.width = wdtw;
   document.getElementById("vcard11").style.height = wdt;
   document.getElementById("vcard11").style.width = wdtw;
+  document.getElementById("vcard12").style.height = wdt;
+  document.getElementById("vcard12").style.width = wdtw;
 
 
   document.getElementById("vcard7").style.height = wdt;
@@ -297,9 +299,9 @@ function resizeBottomCards(width)
 
   
   
-  var wdt2 =  (width * 0.03) + "px";
-  document.getElementById("floatingbtn4s2").style.fontSize = wdt2;
-  document.getElementById("floatingbtn4s1").style.fontSize = wdt2;
+  // var wdt2 =  (width * 0.03) + "px";
+  // document.getElementById("floatingbtn4s2").style.fontSize = wdt2;
+  // document.getElementById("floatingbtn4s1").style.fontSize = wdt2;
 
   var wdt4 =  (width * 0.023) + "px";
   document.getElementById("skill").style.fontSize = wdt4;
@@ -438,6 +440,39 @@ function openWorkLocation()
 function openPublication()
 {
   window.open("https://www.researchgate.net/publication/301719120_Energy_Conservation_Using_Dynamic_Voltage_Frequency_Scaling_for_Computational_Cloud", "_blank"); 
+}
+function openGanttVideo()
+{
+  window.open("https://www.youtube.com/watch?v=ppL7huZEX5g", "_blank"); 
+}
+function openZohoSheetVideo()
+{
+  window.open("https://www.youtube.com/watch?v=kptlFQzZT7U", "_blank"); 
+}
+function openConstructionARVideo()
+{
+  window.open("https://www.youtube.com/watch?v=UPGlht81Zrw", "_blank"); 
+}
+function openLoadLandDroneVideo()
+{
+  window.open("https://www.youtube.com/watch?v=o3v2fM3hOpY", "_blank"); 
+}
+function openMarkupVideo()
+{
+  window.open("https://www.youtube.com/watch?v=Kr6ysAIpejE&t=60s", "_blank"); 
+}
+function openIOTVideo()
+{
+  window.open("https://www.youtube.com/watch?v=9EXZgmovHLc", "_blank"); 
+}
+function openDocscannerVideo()
+{
+  window.open("https://www.youtube.com/watch?v=IUfZAP3Nlsc", "_blank"); 
+}
+
+function openZohoSheetDataFromPictureVideo()
+{
+  window.open("https://www.youtube.com/watch?v=yun417e1kmw", "_blank"); 
 }
 
 function openWorkSite()

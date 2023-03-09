@@ -114,6 +114,46 @@ border-top: 1px solid #8e0e00;
   animation-iteration-count: infinite; 
   animation: shake 0.5s;
 }
+.bottomCardInnernonvideo3:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
+}
+.bottomCardInnernonvideo4:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
+}
+.bottomCardInnernonvideo5:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
+}
+.bottomCardInnernonvideo6:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
+}
+.bottomCardInnernonvideo7:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
+}
+.bottomCardInnernonvideo8:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
+}
+.bottomCardInnernonvideo9:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
+}
+.bottomCardInnernonvideo10:hover {
+  opacity: 0.7;
+  animation-iteration-count: infinite; 
+  animation: shake 0.5s;
+}
 .bottomCardInnernonvideo1 {
   background-image: url('SI_publication.png');
   display: inline-block;
@@ -132,6 +172,154 @@ border-top: 1px solid #8e0e00;
   position: relative;
   border-radius: 5%;
  
+}
+.bottomCardInnernonvideo3 {
+  background-image: url('gantt.jpg');
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+ 
+}
+.bottomCardInnernonvideo4 {
+  background-image: url('ZohoSheet.jpg');
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+ 
+}
+.bottomCardInnernonvideo5 {
+  background-image: url('datafrompicture.jpg');
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+ 
+}
+.bottomCardInnernonvideo6 {
+  background-image: url('landloadDrone.jpg');
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+ 
+}
+.bottomCardInnernonvideo7 {
+  background-image: url('AR.jpg');
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+}
+.bottomCardInnernonvideo8 {
+  background-image: url('iot.jpg');
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+}
+.bottomCardInnernonvideo9 {
+  background-image: url('Markup.jpg');
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
+}
+.bottomCardInnernonvideo10 {
+  background-image: url('Docscanner.jpg');
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #dcdcdc;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  height : 98%;
+  width: 98%;
+  Top: 1%;
+  Left: 1%;
+  position: relative;
+  border-radius: 5%;
 }
 .bottomCardInnernonvideo2 {
   display: inline-block;
