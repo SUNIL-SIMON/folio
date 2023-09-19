@@ -343,8 +343,8 @@ function resizeSocialMedia(width)
   document.getElementById("social4").style.height = wdt4;
   document.getElementById("social5").style.width = wdt3;
   document.getElementById("social5").style.height = wdt4;
-  // document.getElementById("social8").style.width = wdt4;
-  // document.getElementById("social8").style.height = wdt4;
+   document.getElementById("social7").style.width = wdt3;
+   document.getElementById("social7").style.height = wdt4;
 
   var wdt5 =  (width * 0.08) + "px";
   var wdt6 =  (width * 0.06) + "px";
@@ -429,6 +429,10 @@ function openYoutube()
 {
    window.open("https://www.youtube.com/channel/UCyW7iIz8c0Z655hCCdxVsMw", "_blank");
 }
+function openMedium()
+{
+   window.open("https://medium.com/@simon223397", "_blank");
+}
 function openmail()
 {
  window.location.href = "mailto:sunil847148@gmail.com";
@@ -506,7 +510,8 @@ var data = google.visualization.arrayToDataTable([
   ['Swift', 8],
   ['Objective C', 8],
 
-  ['Android Development', 2],
+  ['Android Java', 2],
+  ['Kotlin', 8],
 
   ['HTML / CSS', 4],
   ['JavaScript', 4],
@@ -514,15 +519,16 @@ var data = google.visualization.arrayToDataTable([
   ['Node JS', 2],
   ['React JS', 2],
 
-  ['Java', 4],
+  ['Java', 2],
   ['C++ / C#', 7]
 ]);
 var data2 = google.visualization.arrayToDataTable([
   ['', ''],
   ['iOS / MacOS Development', 16],
-  ['dummy', 2],
+  ['Android Development', 10],
+//  ['dummy', 10],
   ['Full Stack Web Development', 16],
-  ['Core Development', 11]
+  ['Core Development', 9]
 ]);
 
   // Optional; add a title and set the width and height of the chart
@@ -530,23 +536,26 @@ var data2 = google.visualization.arrayToDataTable([
 0: {offset: 0.2,color: '#ffc0c0'},
 1: {offset: 0.2,color: '#ff9595'},
 
-2: {offset: 0.8,color: '#117c6f'},
+2: {offset: 0.2,color: '#127c6f'},
+3: {offset: 0.2,color: '#126c6f'},
 
-3: {offset: 0.2,color: '#8359b8'},
-4: {offset: 0.2,color: '#d3b7ec'},
-5: {offset: 0.2,color: '#a58edf'},
-6: {offset: 0.2,color: '#c6cceb'},
-7: {offset: 0.2,color: '#818396'},
+4: {offset: 0.2,color: '#8359b8'},
+5: {offset: 0.2,color: '#d3b7ec'},
+6: {offset: 0.2,color: '#a58edf'},
+7: {offset: 0.2,color: '#c6cceb'},
+8: {offset: 0.2,color: '#818396'},
 
-8: {offset: 0.2,color: '#00ddfd'},
-9: {offset: 0.2,color: '#00f7fd'},
+9: {offset: 0.2,color: '#00ddfd'},
+10: {offset: 0.2,color: '#00f7fd'},
+11: {offset: 0.2,color: '#01ddfd'},
+12: {offset: 0.2,color: '#0ff7fd'},
 },
 
 };
 var options2 = {'width': wdt, 'height': wdt2, 'backgroundColor' : 'transparent',pieSliceBorderColor : 'transparent', legendTextStyle: { color: '#FFF' }, titleTextStyle: { color: '#FFF' }, pieHole: 0.6,legend: {position: 'none'},pieSliceText: 'none',
 slices: {  
 0: {offset: 0.05,color: '#ff0000'},
-1: {offset: 0.05,color: 'transparent'},
+1: {offset: 0.05,color: '#117c6f'},
 2: {offset: 0.05,color: '#3e2c6b'},
 3: {offset: 0.05,color: '#00b7fd'},
 }};
