@@ -6,12 +6,17 @@
     <title>SUNIL SIMON</title>
 
     <style>
+      .image-stack {
+        /* background-color: #ae1c1c; */
+        position: relative;
+        width: 100%;
+        height: 1600px;
+      }
       #worksnowfall {
         position: fixed;
         inset: 0;
         top: 100px;
         left: calc(50% + 173px);
-        /* background-color: rgb(70, 55, 131); */
         height: 400px;
       }
 
@@ -28,11 +33,11 @@
           opacity: 0;
         }
         20% {
-          opacity: 1;
+          opacity: 0.5;
         }
         to {
           top: 400px;
-          opacity: 1;
+          opacity: 0.5;
         }
       }
 
@@ -51,7 +56,7 @@
         visibility: hidden;
       }
 
-      .work-text-container p {
+      .work-text-container{
         position: absolute;
         top: 100px;
         left: 50%;
@@ -70,10 +75,10 @@
 
         overflow: hidden;
 
-        left: 50%;
+        left: calc(50% - 151px);
         top: 100px;
-        transform: translateX(-133px);
-animation: work-enter 1.2s ease-out forwards;
+        /* transform: translateX(-133px); */
+        animation: work-enter 1s ease-out forwards;
         transition:
           width 1.1s ease,
           left 1s ease;
@@ -85,7 +90,6 @@ animation: work-enter 1.2s ease-out forwards;
         width: 236px;
         height: 400px;
         display: block;
-        
       }
 
       .play-image-container {
@@ -96,7 +100,7 @@ animation: work-enter 1.2s ease-out forwards;
 
         border-radius: 0 20px 20px 0;
 
-        left: 50%;
+        left: calc(50% - 18px);
         top: 100px;
         transform: translateX(2px);
 
@@ -105,7 +109,7 @@ animation: work-enter 1.2s ease-out forwards;
         clip-path: inset(0 0 0 0);
 
         background-color: #4219c8;
-        animation: play-enter 1.2s ease-out forwards;
+        animation: play-enter 0.9s ease-out forwards;
         transition:
           width 1s ease,
           transform 1s ease,
@@ -136,17 +140,17 @@ animation: work-enter 1.2s ease-out forwards;
 
       @keyframes work-enter {
         from {
-          transform: translateX(calc(-100vw - 133px));
+          left: 0px;
         }
 
         to {
-          transform: translateX(-133px);
+          left: calc(50% - 151px);
         }
       }
 
       @keyframes play-enter {
         from {
-          transform: translateX(100vw);
+          transform: translateX(calc(100vw - 169px));
         }
 
         to {
@@ -156,7 +160,7 @@ animation: work-enter 1.2s ease-out forwards;
 
       .image-stack:has(.play-image-container:hover, #worksnowfall:hover)
         .work-image-container {
-        width: 14px;
+        width: 30px;
       }
       .image-stack:has(.play-image-container:hover, #worksnowfall:hover)
         .play-snow-item {
@@ -167,12 +171,10 @@ animation: work-enter 1.2s ease-out forwards;
         .play-image-container {
         width: 286px;
         left: calc(50% - 115px);
-        /* transform: translateX(-115px); */
       }
       .image-stack:has(.play-image-container:hover, #worksnowfall:hover)
         .play-image-container
         img {
-
         margin-left: 0;
       }
       .image-stack:has(.play-image-container:hover, #worksnowfall:hover)
@@ -195,10 +197,9 @@ animation: work-enter 1.2s ease-out forwards;
         clip-path: inset(0 0 0 61%);
       }
       .image-stack:has(.work-image-container:hover, #playsnowfall:hover)
-        .work-text-container
-        p {
+        .work-text-container{
         opacity: 1;
-      }
+      } 
     </style>
   </head>
 
@@ -209,7 +210,13 @@ animation: work-enter 1.2s ease-out forwards;
       <div id="playsnowfall"></div>
 
       <div class="work-text-container">
-        <p>DEVELOPER</p>
+        <p>SOFTWARE DEVELOPER</p>
+        <ul>
+          <li>Web Developer (React/TypeScript/HTML/CSS)</li>
+          <li>iOS/OSX App developer (Obj C/Swift/ReactNative)</li>
+          <li>Android App developer (Kotlin)</li>
+          <li>Hybrid developer (Flutter/KMM)</li>
+        </ul>
       </div>
 
       <!-- Developer image -->
