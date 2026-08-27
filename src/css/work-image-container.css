@@ -1,0 +1,26 @@
+.work-image-container {
+  position: absolute;
+  width: 133px;
+  height: 400px;
+
+  background-color: #c81919;
+  border-radius: 20px 0 0 20px;
+
+  overflow: hidden;
+
+  left: calc(50% - 151px);
+  top: 100px;
+  /* transform: translateX(-133px); */
+  animation: work-enter 1s ease-out forwards;
+  transition:
+    width 1.1s ease,
+    left 1s ease;
+
+  z-index: 2;
+}
+
+.work-image-container img {
+  width: 236px;
+  height: 400px;
+  display: block;
+}

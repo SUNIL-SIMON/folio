@@ -1,0 +1,19 @@
+@keyframes work-enter {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: calc(50% - 151px);
+  }
+}
+
+@keyframes play-enter {
+  from {
+    transform: translateX(calc(100vw - 169px));
+  }
+
+  to {
+    transform: translateX(2px);
+  }
+}

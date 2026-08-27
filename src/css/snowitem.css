@@ -1,0 +1,42 @@
+#worksnowfall {
+  position: fixed;
+  inset: 0;
+  top: 100px;
+  left: calc(50% + 173px);
+  height: 400px;
+}
+
+#playsnowfall {
+  position: fixed;
+  inset: 0;
+  top: 100px;
+  width: calc(50% - 153px);
+  height: 400px;
+}
+
+.work-snow-item {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.play-snow-item {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes fall {
+  from {
+    top: -20px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  to {
+    top: 400px;
+    opacity: 0.2;
+  }
+}

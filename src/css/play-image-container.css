@@ -1,0 +1,36 @@
+.play-image-container {
+  position: absolute;
+
+  width: 169px;
+  height: 400px;
+
+  border-radius: 0 20px 20px 0;
+
+  left: calc(50% - 18px);
+  top: 100px;
+  transform: translateX(2px);
+
+  overflow: hidden;
+
+  clip-path: inset(0 0 0 0);
+
+  background-color: #4219c8;
+  animation: play-enter 0.9s ease-out forwards;
+  transition:
+    width 1s ease,
+    transform 1s ease,
+    clip-path 1.5s ease,
+    left 1s ease;
+
+  z-index: 3;
+}
+
+.play-image-container img {
+  width: 286px;
+  height: 400px;
+
+  display: block;
+  margin-left: -117px;
+
+  transition: margin-left 1s ease;
+}
