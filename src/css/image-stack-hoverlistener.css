@@ -1,27 +1,27 @@
-.image-stack:has(.play-image-container:hover, #worksnowfall:hover)
+.image-stack:has(.play-image-container:hover, #worksnowfall:hover, .play-text-container:hover)
   .work-image-container {
   width: 30px;
 }
-.image-stack:has(.play-image-container:hover, #worksnowfall:hover)
+.image-stack:has(.play-image-container:hover, #worksnowfall:hover, .play-text-container:hover)
   .play-snow-item {
   visibility: visible;
   animation: fall 3s linear infinite;
 }
-.image-stack:has(.play-image-container:hover, #worksnowfall:hover)
+.image-stack:has(.play-image-container:hover, #worksnowfall:hover, .play-text-container:hover)
   .play-image-container {
   width: 286px;
   left: calc(50% - 115px);
 }
-.image-stack:has(.play-image-container:hover, #worksnowfall:hover)
+.image-stack:has(.play-image-container:hover, #worksnowfall:hover, .play-text-container:hover)
   .play-image-container
   img {
   margin-left: 0;
 }
-.image-stack:has(.play-image-container:hover, #worksnowfall:hover)
+.image-stack:has(.play-image-container:hover, #worksnowfall:hover, .play-text-container:hover)
   .playtitle-text-container{
   opacity: 1;
 }
-.image-stack:has(.play-image-container:hover, #worksnowfall:hover)
+.image-stack:has(.play-image-container:hover, #worksnowfall:hover, .play-text-container:hover)
   .work-text-container{
   opacity: 0;
 }

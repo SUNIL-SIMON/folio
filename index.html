@@ -13,7 +13,7 @@
       .image-stack {
         position: relative;
         width: 100%;
-        height: 1600px;
+        height: 500px;
       }
 
       .work-text-container {
@@ -78,9 +78,8 @@
         left: 50%;
         transform: translateX(calc(169px + 5px));
         font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-        z-index: 1;
+        z-index: 10;
       }
-
 
       .play-text-container ul {
         margin: 0;
@@ -116,6 +115,32 @@
         font-size: 2rem;
         transform: translateX(calc(169px + 5px));
         z-index: 4;
+      }
+
+      .about-container {
+        width: 100%;
+        max-width: 700px;
+        box-sizing: border-box;
+
+        margin: 0 auto;
+        padding: 80px 20px 120px;
+
+        font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      }
+
+      .about-container h2 {
+        margin: 0 0 30px;
+
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .about-container p {
+        margin: 0 0 24px;
+
+        font-size: 17px;
+        line-height: 1.6;
       }
     </style>
   </head>
@@ -188,5 +213,22 @@
       </div>
       <script type="module" src="dist/snowfall.js"></script>
     </div>
+    <section class="about-container">
+      <h2># about.</h2>
+
+      <p>I'm a software engineer based in Napier, New Zealand.</p>
+
+      <p>
+        For the past 10 years, I've enjoyed turning complex ideas into simple,
+        reliable and intuitive software. I build across iOS, Android and the
+        web, and I'm happiest when I'm designing, building and figuring things
+        out from the ground up.
+      </p>
+
+      <p>
+        When I'm not writing code, you'll probably find me building bikes,
+        riding them, and looking for the next road or trail to explore.
+      </p>
+    </section>
   </body>
 </html>
